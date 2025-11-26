@@ -1,0 +1,85 @@
+body {   background-color: rgb(243, 233, 253); }
+
+
+h1{ color: rgb(51, 43, 143);
+    text-align: justify;
+    font-size: 75px;
+    font-family: sans-serif;
+    font-weight: bold; }
+
+
+h2{ font-size:  35px;         
+    font-style: italic;
+color: #e91313;
+font-family: Georgia ;
+}
+
+ h3{font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: rgb(63, 59, 59)
+    ;
+}
+
+h4{
+    font-family: 'Arial', Gadget, sans-serif ;
+    font-size: 25px;
+    color: rgb(63, 59, 59);    
+}
+ 
+ 
+  mark{
+  background: rgb(231, 225, 225);
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(80, 78, 78);
+ border-radius: 6px;
+ padding: 1.5px;
+  font-weight: 600;
+}
+
+  
+p{
+    line-height: 5rem;
+    
+}
+
+h5{ 
+    font-family: sans-serif;
+    font-size: 25px;
+    color: rgb(63, 59, 59)
+    ;
+}
+h6{ }
+
+ul{
+    list-style: none;
+}
+
+ul li::before {
+    content: " ✅ ";}
+
+    
+
+    
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
