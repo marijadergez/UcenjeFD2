@@ -1,37 +1,58 @@
 /* 1. OSNOVNE POSTAVKE I POZADINA (Background properties) */
 :root {
     --primarna-boja: #ffffff;
-    --naglasena-boja: #55b1e7;
-    --pozadina-svijetlo: #ecf0f1;
-     --primarna-boja: #0c0c0c;
-    --pozadina: #4a6b30;        
+    
+    margin: 3000px; /* Centriranje */
+    background-color: rgb(14, 13, 13);    
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #b385ac;
+}
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #ffffff;
+}       
+
+
+
+
+/* 2. OPĆE STILIZACIJE (Box Model, Shadows, Outlines) */
+.container { box-sizing: border-box;
+    background-color: #f9f9f9;
+
+    padding: 20px;
+    border-radius: 10px; /* Zaobljeni kutovi */     
+}        
 
 
     h1 {
         color: #464670;
-    font-size: 35px;
+    font-size: 70px;
+text-align: center;
     font-family: 'Arial Black', sans-serif;}
     p{
         font-family: 'Arial Black', sans-serif;
         font-size: 19px;
         color: #676a6e; 
    text-decoration: underline;
-    
+    text-align: center;
 
     
 font-style:italic;
 
     }
-body{
-    background-color: var(--pozadina);
-    background-image: radial-gradient(circle,#22ee4e 1px, transparent 1px);
-   
-    background-repeat: repeat;
-    background-attachment: fixed;
-}
+
+
+
     h3{
         color: #3a3a3d;
-    font-size: 35px;
+    font-size: 45px;
     font-family: 'Arial Black', sans-serif
     }
     h4{color: #3a3a3d;
