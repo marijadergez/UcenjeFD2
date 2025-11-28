@@ -3,14 +3,17 @@
     --primarna-boja: #ffffff;
     
     margin: 3000px; /* Centriranje */
-    background-color: rgb(14, 13, 13);    
+    background-color: rgb(14, 13, 13);  
+
+
 }
 
 body{
+    
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #b385ac;
+    background-color: #ddb2d7;
 }
 .container {
     max-width: 1200px;
@@ -33,12 +36,12 @@ body{
 
     h1 {
         color: #464670;
-    font-size: 70px;
+    font-size: 80px;
 text-align: center;
     font-family: 'Arial Black', sans-serif;}
     p{
         font-family: 'Arial Black', sans-serif;
-        font-size: 19px;
+        font-size: 30px;
         color: #676a6e; 
    text-decoration: underline;
     text-align: center;
@@ -52,8 +55,8 @@ font-style:italic;
 
     h3{
         color: #3a3a3d;
-    font-size: 45px;
-    font-family: 'Arial Black', sans-serif
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif
     }
     h4{color: #3a3a3d;
     font-size: 35px;
@@ -259,8 +262,11 @@ address {
     
     /* Dimenzije bloka */
     block-size: auto;
+    background-color: #be91be;
+    font-size: 35px;
     min-block-size: 100px;
     max-block-size: 200px;
+    font-color: rgb(73, 70, 73);
     
     /* Radius donji kutovi (Fizički) */
     border-bottom-left-radius: 5px;
