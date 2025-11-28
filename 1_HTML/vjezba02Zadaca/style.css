@@ -3,51 +3,46 @@
     --primarna-boja: #ffffff;
     --naglasena-boja: #55b1e7;
     --pozadina-svijetlo: #ecf0f1;
+     --primarna-boja: #0c0c0c;
+    --pozadina: #4a6b30;        
+
+
     h1 {
-        color: #1c1f38;
-    font-size: 35px;}
-}
-p{font-family: sans-serif 
-       font-size: 20px;
-    color: #1c1f38;
-    font-weight: normal;
-    font-style: italic;
-     }
-
-body {
+        color: #464670;
+    font-size: 35px;
+    font-family: 'Arial Black', sans-serif;}
+    p{
+        font-family: 'Arial Black', sans-serif;
+        font-size: 19px;
+        color: #676a6e; 
+   text-decoration: underline;
     
-    height: 30px;
-    font-size: medium  color #1c1f38;
 
+    
+font-style:italic;
 
-    /* Korištenje background shorthand i specifičnih svojstava */
-    background-color: var(--pozadina-svijetlo);
-    background-image: radial-gradient(circle, #bdc3c7 1px, );
-    background-size: 20px 20px; /* Veličina uzorka */
+    }
+body{
+    background-color: var(--pozadina);
+    background-image: radial-gradient(circle,#22ee4e 1px, transparent 1px);
+   
     background-repeat: repeat;
-    background-attachment: fixed; /* Pozadina fiksirana pri skrolanju */
-    background-position: center top;
-    background-origin: padding-box;
-    background-clip: border-box;
-    font-family: sans-serif;   
-    margin: 0;
-    padding: 20px;
+    background-attachment: fixed;
 }
-
-/* 2. KONTEJNER (Dimensions, Box-sizing, Shadows) */
-.container {
-    /* Dimenzije (Fizičke i Logičke) */
-    width: 90%;
-    max-width: 1000px;
-    min-width: 300px;
-    inline-size: 90%; /* Logička širina */
-    max-inline-size: 1000px;
+    h3{
+        color: #3a3a3d;
+    font-size: 35px;
+    font-family: 'Arial Black', sans-serif
+    }
+    h4{color: #3a3a3d;
+    font-size: 35px;
+    font-family: 'Arial Black', sans-serif}
     
     /* Visina */
     min-height: 100vh;
     min-block-size: 100vh; /* Logička visina */
     
-    margin: 0 auto; /* Centriranje */
+    margin: 1500px; /* Centriranje */
     background-color: white;
     
     /* Box Model */
