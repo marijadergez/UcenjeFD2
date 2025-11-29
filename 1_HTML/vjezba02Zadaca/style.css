@@ -1,28 +1,30 @@
+
+
 /* 1. OSNOVNE POSTAVKE I POZADINA (Background properties) */
 :root {
     --primarna-boja: #ffffff;
-    
-    margin: 3000px; /* Centriranje */
-    background-color: rgb(14, 13, 13);  
-
-
+   
+    margin: 3000px; 
+    padding: 0%;
+    box-sizing: border-box;/* Centriranje */
+       background-color: rgb(14, 13, 13); 
 }
 
 body{
-    
+    margin-top: 0%;
+    padding: 0;   
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #ddb2d7;
 }
+
 .container {
     max-width: 1200px;
     margin:  auto;
     padding: 20px;
     background-color: #ffffff;
 }       
-
-
 
 
 /* 2. OPĆE STILIZACIJE (Box Model, Shadows, Outlines) */
@@ -66,8 +68,7 @@ font-style:italic;
     min-height: 100vh;
     min-block-size: 100vh; /* Logička visina */
     
-    margin: 1500px; /* Centriranje */
-    background-color: white;
+ 
     
     /* Box Model */
     box-sizing: border-box;
@@ -80,7 +81,6 @@ font-style:italic;
     outline-width: 1px;
     outline-color: rgba(0,0,0,0.1);
     outline-offset: 10px;
-}
 
 /* 3. ZAGLAVLJE (Background Blend Modes & Padding) */
 header {
@@ -103,39 +103,8 @@ header {
     border-top-right-radius: 5px;
 }
 
-/* 4. FIGURE & SLIKE (Borders - Fizički i Logički) */
-/* Selektor potomka */
-.gallery figure {
-    /* Margine */
-    margin-block: 2rem;
-    margin-inline: auto;
-    
-    /* Dimenzije */
-    width: 60%;
-    aspect-ratio: 16 / 9; /* Moderno svojstvo za omjer */
-    
-    /* Border (Sve strane pojedinačno za demo) */
-    border-top-style: solid;
-    border-top-width: 2px;
-    border-top-color: var(--primarna-boja);
-    
-    border-right: 2px dashed var(--primarna-boja); /* Shorthand */
-    
-    border-bottom-width: 4px;
-    border-bottom-style: double;
-    border-bottom-color: var(--primarna-boja);
-    
-    border-left-style: solid;
-    border-left-width: 2px;
-    border-left-color: var(--primarna-boja);
 
-    /* Radius */
-    border-start-start-radius: 20px; /* Logički (Gore-Lijevo u LTR) */
-    border-end-end-radius: 20px;     /* Logički (Dolje-Desno u LTR) */
-    
-    padding: 10px;
-    background-color: #fff;
-}
+
 
 .gallery img {
     width: 100%;
@@ -204,32 +173,6 @@ dd {
     border-left: 2px solid #ddd;
 }
 
-/* 6. CITATI (Blockquote & Logical Borders Extended) */
-blockquote {
-    background-color: #f9f9f9;
-    margin: 40px 0;
-    
-    /* Logički Padding */
-    padding-block: 20px;
-    padding-inline: 30px;
-    
-    /* Kompleksni Logički Borderi */
-    border-block-start-style: solid;
-    border-block-start-width: 4px;
-    border-block-start-color: var(--naglasena-boja);
-    
-    border-block-end-style: dotted;
-    border-block-end-width: 2px;
-    border-block-end-color: var(--naglasena-boja);
-    
-    border-inline-start-style: solid;
-    border-inline-start-width: 8px;
-    border-inline-start-color: var(--primarna-boja);
-    
-    border-inline-end-style: none;
-    
-    font-size: 1.1em;
-}
 
 q {
     color: var(--naglasena-boja);
@@ -262,11 +205,11 @@ address {
     
     /* Dimenzije bloka */
     block-size: auto;
-    background-color: #be91be;
+    background-color: #252325;
     font-size: 35px;
     min-block-size: 100px;
     max-block-size: 200px;
-    font-color: rgb(73, 70, 73);
+    font-color: rgb(230, 192, 230);
     
     /* Radius donji kutovi (Fizički) */
     border-bottom-left-radius: 5px;
@@ -277,7 +220,7 @@ address {
 
 /* Selektor atributa */
 a[href^="mailto"] {
-    color: var(--naglasena-boja);
+    color: #4023e0;
     text-decoration: none;
     border-bottom: 1px dotted white;
 }
