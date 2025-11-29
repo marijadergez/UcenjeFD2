@@ -1,7 +1,7 @@
 :root{
     --primarna-boja: #d1adcb;
     --naglasena-boja: #443936;
-    --pozadina-svjetlo: #070607;
+    --pozadina-svjetlo: rgb(189, 215, 223);
     }
 body{ background-color: var(--pozadina-svjetlo);
     margin: 0 center;
@@ -17,7 +17,7 @@ body{ background-color: var(--pozadina-svjetlo);
    inline-size: 90%;
    max-inline-size: 400px;
 
-   min-height: 100vh;
+   min-height:  100vh;
    min-block-size: 65vh;
 
    margin: 20px  auto;
@@ -44,7 +44,7 @@ h3{
 blockquote{
     font-style: bold;
     color: var(--naglasena-boja);
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2{
