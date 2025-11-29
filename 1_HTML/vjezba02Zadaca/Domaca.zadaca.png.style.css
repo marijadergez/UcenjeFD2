@@ -1,22 +1,25 @@
 :root{
-    --primarna-boja: #0d0e0d;
-    --naglasena-boja: #FF5722;
-    --pozadina-svjetlo: #ecf0f1;
-}
-body{
-    background-color: var(--pozadina-svjetlo);
+    --primarna-boja: #d1adcb;
+    --naglasena-boja: #443936;
+    --pozadina-svjetlo: #070607;
+    }
+body{ background-color: var(--pozadina-svjetlo);
+    margin: 0 center;
+   
+   
+    
 }
 .container{
    width: 90%;
    max-width: 1000px;
    min width: 300px;
    inline-size: 90%;
-   max-inline-size: 1000px;
+   max-inline-size: 400px;
 
    min-height: 100vh;
-   min-block-size: 100vh
+   min-block-size: 65vh;
 
-   margin: 0 auto;
+   margin: 20px  auto;
    background-color: #ecf0f1;
 
 
