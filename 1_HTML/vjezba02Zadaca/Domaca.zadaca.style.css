@@ -3,3 +3,30 @@
     --naglasena-boja: #FF5722;
     --pozadina-svjetlo: #ecf0f1;
 }
+body{
+    background-color: var(--pozadina-svjetlo);
+}
+.container{
+   width: 90%;
+   max-width: 1000px;
+   min width: 300px;
+   inline-size: 90%;
+   max-inline-size: 1000px;
+
+   min-height: 100vh;
+   min-block-size: 100vh
+
+   margin: 0 auto;
+   background-color: #ecf0f1;
+
+
+
+   box-sizing: border-box;
+
+   outlyne-style: solid;
+   outlyne-width: 2px;
+   outline-color: var(--naglašena-boja);
+   outline-offset: 10px;
+}
+
+
