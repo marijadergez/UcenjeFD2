@@ -6,10 +6,11 @@
 body{ background-color: var(--pozadina-svjetlo);
     margin: 0 center;
    
-   
+ 
     
 }
 .container{
+   
    width: 90%;
    max-width: 1000px;
    min width: 300px;
@@ -21,7 +22,7 @@ body{ background-color: var(--pozadina-svjetlo);
 
    margin: 20px  auto;
    background-color: #ecf0f1;
-
+       
 
 
    box-sizing: border-box;
@@ -30,11 +31,20 @@ body{ background-color: var(--pozadina-svjetlo);
    outlyne-width: 2px;
    outline-color: var(--naglašena-boja);
    outline-offset: 10px;
+   border-radius: 1rem;
+   padding: 20px;
+   
 }
 h3{
     text-align: center;
     color: var(--naglasena-boja);
     font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+blockquote{
+    font-style: bold;
+    color: var(--naglasena-boja);
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h2{
