@@ -1,0 +1,35 @@
+body{
+    background: #6A61A4;
+background: -moz-linear-gradient(left, #6A61A4 0%, #A7C9CB 65%, #205475 100%);
+background: -webkit-linear-gradient(left, #6A61A4 0%, #A7C9CB 65%, #205475 100%);
+background: linear-gradient(to right, #6A61A4 0%, #A7C9CB 65%, #205475 100%);
+}
+
+section{
+    display: grid;
+    grid-template-areas: 
+    ". a a b "   /*tocka je nista tj prazno) */
+    "c d d b " /*a u area nije a u klasi*/
+    "e e e b ";
+    row-gap: 2rem; /*prored*/
+    column-gap: 2rem; /*prored*/ /*repeat vertical*/
+
+
+}
+.a{grid-area: a;}  /*naredba koje slovo ide u koje mjesto*/
+.b{grid-area: b;}
+.c{grid-area: c;}
+.d{grid-area: d;}
+.e{grid-area: e;}
+
+div{
+    background-color: #c2b5a4;
+    border-radius: 2rem;
+    font-size: 4rem;
+    padding: 2rem;
+    border: 4px double  rgb(31, 25, 10); /*okvir oko kolumne*/ 
+
+}  /*flexbox ,floatanje,react,*/
+a{color: bisque;
+font-family: 'Courier New', Courier, monospace;
+}
