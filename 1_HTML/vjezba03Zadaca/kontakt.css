@@ -21,3 +21,9 @@
     background-color: aliceblue;
     border: 2px solid green;
 }
+
+section{
+    min-height: 150px;
+    background-color: aliceblue;
+    border: 2px solid;
+}
