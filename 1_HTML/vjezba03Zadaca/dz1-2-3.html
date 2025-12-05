@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css raspored</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-decoration"></div> <hgroup>
+            <h1>Osnove CSS rasporeda</h1>
+            <p>Tri ključne tehnike: Flexbox, Grid i Float</p>
+            <p1>Flexbox Grid Float</p1>
+        </hgroup>
+    </header>
+
+    <nav>
+        <ul>
+            <ul><a href="#program">Stavka1</a></ul>
+            <ul><a href="#povijest">Stavka2</a></ul>
+            <ul><a href="#tvrdja">Stavka3</a></ul>
+            <ul><a href="#kontakt">Kontakt</a></ul>
+        </ul>
+       
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h2>1. Fleksibilni model kutija (Flexbox)</h2>
+            <p>Flexbox je jednodimenzionalni model rasporeda dizajniran 
+                za distribuciju prostora između stavki u spremniku i moćnu mogućnost poravnanja.
+                Idealan za navigaciju ,male komponente i centriranje elemenata.
+            </p>
+        </section>
+
+        <aside>
+            <h3>Satnica</h3>
+            <div class="float-img">
+                    <img src="img.png" alt="snipp stavki">
+                </div>
+                <p>Ovdje j eprikazano poravnanje i automatska prilagodba veličine stavki unutar reda.</p>
+        <article>
+            <div class="article-text">
+                <h2><span>Dvodimenzionalni model mreže (CSS Grid)</span></h2>
+                <div class="float-img">
+                    <img src="layout.png" alt="snipp stavki">
+                </div>
+               
+                <p>Elementi su smješteni pomoću grid <template-areas class=""></template-areas></p>
+                <p>CSS Grid je dvodiomenzionalni sustav rasporeda (redovi i stupci).
+                    Savršen za dizajniranje cjelokupnog rasporeda stranice (main layout) 
+                    gdje želite pozicioniranje elemenata.
+                </p>
+                
+                <div class="highlight-box">
+                    <strong>Zanimljivost:</strong> Ujedinjenje je omogućilo brži razvoj trgovine i prometa na rijeci Dravi.
+                </div>
+
+                <p>Ove godine grad priprema poseban program koji uključuje besplatan ulaz u Zoološki vrt, Gradske bazene i vožnju javnim prijevozom. Proslava je prilika da se prisjetimo bogate povijesti, ali i da pogledamo u budućnost razvoja slavonske metropole.</p>
+
+                <p>Građani i posjetitelji moći će uživati u gastro ponudi, sajmu antikviteta i prigodnoj prodaji lokalnih OPG-ova. Navečer nas očekuje spektakularan koncert popularnih izvođača.</p>
+                
+                <p>Osijek je poznat po svojoj secesijskoj arhitekturi, promenadi uz Dravu koja je jedna od najljepših u ovom dijelu Europe, te gostoljubivosti svojih stanovnika.</p>
+            </div>
+            
+            <div class="clear-fix"></div>
+        </article>
+
+        <div id="ads">
+            <div class="ad-banner">
+                <h4>Info Pult</h4>
+                <p>Za sve informacije posjetite Turističku zajednicu u Tvrđi.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Grad Osijek. Sva prava pridržana.</p>
+        <p>Pratite nas na društvenim mrežama.</p>
+    </footer>
+
+</body>
+</html>
