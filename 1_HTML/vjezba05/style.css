@@ -1,0 +1,23 @@
+body{
+    background-color: antiquewhite;   /*tipka f2 za preimenovat dokument foile*/
+}       
+video#edunova{
+    max-width: 500px; /*/ velicina videa tj boxa*/
+}
+
+.stranica{   /*točka je jer je class*/
+    min-width: 500px; /*smanji to da bude krug ako su pixeli npr 1000*/
+    min-height: 300px;
+    border: 3px solid blue;
+    border-radius: 1000px;
+
+}
+
+.pdf{
+    width: 50%;
+    height: 20%;
+}
+.karta{
+    width: 100%;
+    max-height: 300px;
+}
