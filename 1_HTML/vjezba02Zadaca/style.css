@@ -1,0 +1,226 @@
+
+
+/* 1. OSNOVNE POSTAVKE I POZADINA (Background properties) */
+:root {
+    --primarna-boja: #f7f0f0;
+   
+    margin: 3000px; 
+    padding: 0%;
+    box-sizing: border-box;/* Centriranje */
+       background-color: rgb(14, 13, 13); 
+}
+
+body{
+    margin-top: 0%;
+    padding: 0;   
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ddb2d7;
+}
+
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #ffffff;
+}       
+
+
+/* 2. OPĆE STILIZACIJE (Box Model, Shadows, Outlines) */
+.container { box-sizing: border-box;
+    background-color: #f9f9f9;
+
+    padding: 20px;
+    border-radius: 10px; /* Zaobljeni kutovi */     
+}        
+
+
+    h1 {
+        color: #464670;
+    font-size: 80px;
+text-align: center;
+    font-family: 'Arial Black', sans-serif;}
+    p{
+        font-family: 'Arial Black', sans-serif;
+        font-size: 30px;
+        color: #676a6e; 
+   text-decoration: underline;
+    text-align: center;
+
+    
+font-style:italic;
+
+    }
+
+
+
+    h3{
+        color: #3a3a3d;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif
+    }
+    h4{color: #3a3a3d;
+    font-size: 35px;
+    font-family: 'Arial Black', sans-serif}
+    
+    /* Visina */
+    min-height: 100vh;
+    min-block-size: 100vh; /* Logička visina */
+    
+ 
+    
+    /* Box Model */
+    box-sizing: border-box;
+    
+    /* Sjena */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+    /* Outline (Vanjski obrub) */
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: rgba(0,0,0,0.1);
+    outline-offset: 10px;
+
+/* 3. ZAGLAVLJE (Background Blend Modes & Padding) */
+header {
+    background-image: url('slike/slika5.png');
+    background-color: var(--primarna-boja);
+    background-blend-mode: overlay; /* Miješanje boje i slike */
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+    
+    /* Logički Padding */
+    padding-block-start: 4rem;
+    padding-block-end: 2rem;
+    padding-inline: 2rem; /* Lijevo i desno */
+    
+    text-align: center;
+    
+    /* Specifični Border Radius na vrhu */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Standardni radius */
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+/* 5. LISTE (List Styles & Logical Borders) */
+.content-area {
+    /* Padding mix */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+/* Uređena lista */
+ol {
+    list-style-type: decimal-leading-zero;
+    color: #fc8638;   
+
+    list-style-position: inside;
+    border-inline-start: 5px solid var(--naglasena-boja); /* Lijeva crta (logički) */
+    padding-inline-start: 20px;
+    margin-bottom: 30px;
+}
+
+/* Neuređena lista */
+ul {
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="%23e67e22"/></svg>');
+    border-block-end: 1px solid #ccc; /* Donja crta (logički) */
+    padding-bottom: 20px;
+}
+
+/* Definicijska lista - Border Image Demo */
+dl {
+    margin-top: 40px;
+    padding: 20px;
+    
+    /* Border Image Properties */
+    border: 10px solid transparent;
+    border-image-source: linear-gradient(45deg, var(--primarna-boja), var(--naglasena-boja));
+    border-image-slice: 1;
+    border-image-width: 5px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+}
+
+dt {
+    font-weight: bold;
+    color: var(--primarna-boja);
+    margin-block-end: 5px;
+}
+
+dd {
+    margin-inline-start: 0;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #ddd;
+}
+
+
+q {
+    color: var(--naglasena-boja);
+    font-weight: bold;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    text-align: right;
+    color: #be91be;
+}
+
+/* 7. ADRESA (Size constraints & Outline) */
+address {
+    background-color: var(--primarna-boja);
+    color: rgb(230, 194, 230);
+    font-style: normal;
+    
+    /* Logičke margine */
+    margin-block-start: 50px;
+    margin-inline: 0;
+    
+    /* Padding mix */
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+    /* Dimenzije bloka */
+    block-size: auto;
+    background-color: #252325;
+    font-size: 35px;
+    min-block-size: 100px;
+    max-block-size: 200px;
+    font-color: rgb(230, 192, 230);
+    
+    /* Radius donji kutovi (Fizički) */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    text-align: center;
+}
+
+/* Selektor atributa */
+a[href^="mailto"] {
+    color: #4023e0;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}

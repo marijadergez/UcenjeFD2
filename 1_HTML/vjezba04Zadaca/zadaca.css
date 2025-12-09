@@ -1,0 +1,43 @@
+body {
+    margin: 10;
+    padding: 10;
+    background: #1a1818;                
+    font-family: Arial, sans-serif;
+    display: flex;                     /* centriranje */
+    justify-content: top center;           /* horizontalno */
+    align-items:top  center;               /* vertikalno */
+    height: 90vh;
+}
+
+.container {
+    
+   margin-left: 390px; 
+    width: 650px;
+    background: #ddd7dd;                  /* bijeli container */
+    padding: 90px;
+    border-radius: 2,5px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25); /* blaga sjena */
+}
+
+
+
+button{
+    background-color: blue;
+    box-sizing: border-box;
+    
+    border: none;
+    padding: 12px 275px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    
+}
+td th{
+    padding: 10px;
+}
+section {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;}

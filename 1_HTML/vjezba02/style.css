@@ -1,0 +1,53 @@
+:root{
+    --primarna-boja: #0c0c0c;
+    --pozadina: #4a6b30;        
+
+}
+
+body{
+    background-color: var(--pozadina);
+    background-image: radial-gradient(circle,#22ee4e 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: rgb(49, 105, 55)  ; /*boja malog okvira*/
+    font-size: 90px;
+
+}
+
+.container{
+    width: 70%;
+    max-width: 1000px;
+    min-width: 200px;
+
+
+    inline-size: 90%;
+    max-inline-size: 1000px;
+
+    min-height: 100vh;
+    min-block-size: 100vh;
+
+    margin: 20px auto;     /*auto znaci centriraj*/ /*margin: 20px auto; pomicemo okvir po stranici lijevo desno*/
+    background-color: rgb(151, 187, 134);
+
+    box-sizing: border-box;
+
+    outline-style: solid;
+    outline-width: 10px;
+outline-color: var(--primarna-boja);
+outline-offset: 10px;
+text-align: center;}   /*centriraj txt*/
+
+section{   /*okvir manji donji*/
+    border:2px solid var(--primarna-boja) ;
+border-radius: 0.5rem;  /*uglovi zaobljeni n aokviru*/
+margin: 10px;
+padding: 15px;}
+
+/*/
+vsc-- file--- copy path znaci  copy to browser da me baci na stranicu*/
+/*var je funkcija koja ce od definirane varijable uzeti njezinu vrijednost*/
+/*PRIlGODBA STO VECEM BROJU KORISNIKA  (OKVIR I SKROLANJE)  (vertikalni skroler) postizemo da im aparpatu u html upisemo umjesto title div.container
+U CSS   .CONTAINER {  }   
+
+/*laksi otpor*/ 
