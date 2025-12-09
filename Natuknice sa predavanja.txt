@@ -1,0 +1,44 @@
+t{
+    --primarna-boja: #2c3e50;    varijabla
+
+var je funkcija koja ce od definirane varijable uzeti njezinu vrijednost
+
+vsc-- file--- copy path znaci  copy to browser da me baci na stranicu
+
+
+PRIlGODBA STO VECEM BROJU KORISNIKA  (OKVIR I SKROLANJE)  (vertikalni skroler) postizemo da im aparpatu u html upisemo umjesto title div.container
+U CSS   .CONTAINER {  }   
+
+.container{
+    width: 90%;
+    max-width: 1000px   ;
+    min-width: 300px;
+    inline-size: 90%;
+    max-inline-size: 100px;
+
+    min-height: 100vh;
+    min-block-size: 100vh;
+
+    margin: 0auto;     auto znaci centriraj
+    background-color: beige;
+
+    box-sizing: border-box;
+
+    outline-style: solid;
+    outline-width: 1px;
+outline-color: var(--primarna-boja);
+outline-offset: 10px;
+
+
+
+
+
+
+
+margin: 20px auto; pomicemo okvir po stranici lijevo desno
+
+
+horizontal ruler border
+
+
+ 
