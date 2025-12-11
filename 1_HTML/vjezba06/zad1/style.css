@@ -1,0 +1,21 @@
+:root{
+    --pozadina-boja:#eee; /*-- varijable je kontener za vrijednoswt*/
+    --panel-boja: white;     
+}
+
+body{
+    background-color:var(--pozadina-boja) ;
+}
+div{
+    font-family: sans-serif;
+    background-color: var(--panel-boja);
+    max-width: 300px;
+    margin: 310px auto;  /*sredina je auto ne cemntar*/
+    border-radius: 10px; /*zaobljen rub*/
+    padding: 15px;   /*txt da se odvoji od okvira da ga centriras*/
+    text-align: center;
+}
+h2{
+    color: rgb(114, 116, 117);
+    font-size: 1.1rem;
+}
