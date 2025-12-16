@@ -1,0 +1,82 @@
+body{
+    background-color: aliceblue;  /*otpion shift š na lapu*/
+    font-family: sans-serif;
+}
+.container{
+    background-color: white;
+    border: 1px solid red;   /* ctrl k c*/
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+}
+.forma{
+    margin-bottom: 30px; /*odvojen lista korisnika od gornje strane*/
+    border: 1px solid #eaeceb; /*figma alat za dizajn*/
+    border-radius: 10px;
+    background-color: rgb(242, 244, 247);
+    padding: 1.5rem; /*margina unutar coktenrea da nije na granici kontenera*/ /*15 puta od roditelja*/
+    /*rem je na rute a em je na roditelja*/
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;      /*razdvojio je elemente u utar tablice*/
+
+}
+.unos{
+    display: flex;
+    gap: 2px; /*razmak izmedju prostora unosa i naziva */
+    flex-direction: column;
+}
+h1{
+     font-size: 1.5rem;
+     border-bottom: 2px solid blue;
+     padding-bottom: 10px;
+     max-width: 180px;
+}
+label{
+    font-weight: bold;
+    color: #555;
+}
+input[type="text"], /*gadjaj taj tekst*/
+input[type="email"],
+select{
+    padding: 8px;    /*povecanje labela tj prostora gdje korisnik unosi */
+    border: 1px solid #ccc;
+    border-radius: 5px ; 
+}
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5px ;
+    max-width: 200px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;/*brišem prored u tablici na plavom dijelu*/
+}
+th{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: left;
+}   /*prvo dijete u td je prva čelija*/
+
+tbody > tr > td:first-child
+thead >tr > th:first-child
+thead >tr > th:last-child{
+    text-align: center;
+}
+
+tbody > tr> td:last-child{
+    color: red;
+    text-align: center;
+}
+td{
+    padding: 7px;
+    border-bottom: 1px solid #ccc;
+
+}
