@@ -8,7 +8,7 @@ body{
     
 }
 .panel{
-    max-width: 120px;
+    max-width:320px;
     padding: 30px;
     background-color: white;
     margin-bottom: 10px;
@@ -16,12 +16,12 @@ body{
 
    
 }
+
 .grid-container{
     display: grid;
     grid-template-areas:"a b c ";
    column-gap: 1rem;
-    justify-content: center;
-   
-   
-}
+    justify-content: center;  
+  
+    }
 
