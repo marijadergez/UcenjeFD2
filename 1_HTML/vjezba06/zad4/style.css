@@ -24,4 +24,19 @@ body{
     justify-content: center;  
   
     }
+    table, th, td {
+       border-bottom: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: left;
+      }
+      
+      th {
+        background-color: #1f2357;
+        color: white;
+      } 
+      .container2{
+    
+        background-color: lightblue;    
+      }
 
