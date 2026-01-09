@@ -2,3 +2,26 @@ body{
     background-color: rgb(179, 162, 142);
     
 }
+.container{
+    
+    background-color: orange;
+    
+}
+.panel{
+    max-width: 120px;
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+   
+}
+.grid-container{
+    display: grid;
+    grid-template-areas:"a b c ";
+   column-gap: 1rem;
+    justify-content: center;
+   
+   
+}
+
