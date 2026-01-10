@@ -1,8 +1,9 @@
 body{
-    background-color: rgb(179, 162, 142);
+    background-color: rgb(228, 214, 199);
+    align-items: center;
     
 }
-.container{
+.container1{
     
     background-color: orange;
     
@@ -36,11 +37,20 @@ body{
         background-color: #1f2357;
         color: white;
       } 
-      .container2{
-    
+     .grid-container2{
+        border: #1f2357 2px solid;
         background-color: lightblue;  
         max-width: 500px;
         padding: 30px;
         border-radius: 20px;
       }
+      .grid-container3{
+        border: #1f2357 2px solid;
+        background-color: rgb(41, 42, 116);  
+        max-width: 500px;
+        padding: 30px;
+        border-radius: 20px;
+      }
+     
+
 
