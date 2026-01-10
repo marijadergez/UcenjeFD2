@@ -1,6 +1,8 @@
 body{
     background-color: rgb(228, 214, 199);
     font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+
 }
 h1{
     color: orange;
@@ -39,6 +41,7 @@ h1{
         color: white;
       } 
 .grid-container2  {
+  margin: auto;
         border: #1f2357 2px solid;
         background-color: rgb(220, 230, 233);  
         max-width: 900px;
@@ -46,11 +49,19 @@ h1{
         border-radius: 20px;
       }
 .grid-container3{
+  margin: auto;
         border: #1f2357 2px solid;
         background-color: #1f2357; 
         max-width: 900px;
         padding: 30px;
         border-radius: 20px;
+      }
+      button{
+        background-color: orange;
+     
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
       }
       
      

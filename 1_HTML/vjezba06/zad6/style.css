@@ -3,7 +3,7 @@ body{
     font-family: Arial, sans-serif;
  
     display: grid;
-   
+    grid-template-columns: repeat(3, 1fr);/*ili ovo ili ovo ispod*/
     grid-template-areas:"box"
                         "box2  box3"
                         "box4 ";
