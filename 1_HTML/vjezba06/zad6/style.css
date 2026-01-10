@@ -3,14 +3,15 @@ body{
     font-family: Arial, sans-serif;
  
     display: grid;
-    grid-template-areas:
-     "a a a a"
-     ". b c ."
-     "d d d d";
-    grid-gap: 2px;
+   
+    grid-template-areas:"box"
+                        "box2  box3"
+                        "box4 ";
+    gap: 20px;
     padding: 20px;
 }
 .box{
+    
     border: 2px solid #161616;
     border-radius: 1.5rem;
     max-width: 900px;
