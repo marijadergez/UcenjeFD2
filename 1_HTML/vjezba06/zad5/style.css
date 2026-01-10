@@ -1,0 +1,27 @@
+body{
+    background-color: #293853;
+    secundary-color: #28c3c9;
+    color: white;
+    font-family: Arial, sans-serif;   
+}
+h2{
+    color: #28c3c9;
+}
+h1{
+    text-align: center;
+}
+.button{
+    background-color: #28c3c9;
+}
+.container{
+    display: grid
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  
+    width: 50px;
+  
+    padding: 20px;
+    border: 2px solid #28c3c9;
+}
+
+   
