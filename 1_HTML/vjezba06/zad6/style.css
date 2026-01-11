@@ -1,15 +1,22 @@
-body{
+body {
     background-color: rgb(225, 231, 231);
     font-family: Arial, sans-serif;
- 
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/*ili ovo ili ovo ispod*/
-    grid-template-areas:"box"
-                        "box2  box3"
-                        "box4 ";
+    grid-template-columns: 1fr 1fr; /* dva stupca */
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "box box"
+        "box2 box3"
+        "box4 box4";
+
     gap: 20px;
     padding: 20px;
 }
+.box  { grid-area: box; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
 .box{
     
     border: 2px solid #161616;
@@ -34,7 +41,7 @@ h2{
     margin-left: 15px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    ;
     margin: auto;
     padding: 10px;  
     gap: 10px;
@@ -46,7 +53,7 @@ h2{
     margin-right: 15px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    
     margin: auto;
     padding: 10px;  
     gap: 10px;
@@ -63,4 +70,21 @@ h2{
     max-width: 900px;
     margin: auto;
     background-color: #e2dada;
+
+    padding: 8px;          /* manji padding */
+    min-height: 60px;      /* duplo kraći */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.box,
+.box4 {
+    max-width: 900px;
+   
+}
+
+.box2,
+.box3 {
+    width: 100%;
 }
