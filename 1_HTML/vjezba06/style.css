@@ -46,10 +46,32 @@ h1, h2, h3 {
     transform: translateY(-3px);
     transition: 0.3s;
 }
-.button {
-    background-color: #0f8a3e;
-    color: rgb(15, 15, 15);
-    
-    padding: 10px ;
-   
+button {
+    background-color: #0f8a3e; /* zelena */
+    border: 2px solid #0f8a3e;
+    color: #011611; /* tamni tekst radi kontrasta */
+    border-radius: 10px;
+    padding:4px 200px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+h4{
+    color: #0f8a3e;
+}
+input {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #0f8a3e;
+    background: transparent;
+    color: white;
+}
+.a {
+    min-height: 200px;
+}
+
+.f {
+    min-height: 100px;
 }
