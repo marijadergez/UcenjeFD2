@@ -9,8 +9,8 @@ body{
     grid-template-areas:
         "a a a a"
         "b b c c"
-        "d d e e"
-        "f f f f";
+        "d d d d";
+        
     gap: 20px; /* razmak između boxeva */
     padding: 20px;
     margin: 0;
