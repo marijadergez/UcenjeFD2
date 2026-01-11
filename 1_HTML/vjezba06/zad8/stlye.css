@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(226, 223, 223);
+     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 stupca */
+    grid-template-rows: auto auto auto auto; /* 4 reda */
+    grid-template-areas:
+        "a a a a"
+        "b b c c"
+        "d d e e"
+        "f f f f";
+    gap: 20px; /* razmak između boxeva */
+    padding: 20px;
+    margin: 0;
+}
