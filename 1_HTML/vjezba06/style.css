@@ -35,17 +35,10 @@ body {
 }
 
 /* Naslovi unutar container-a */
-h1, h2, h3 {
-    text-align: center;
-    margin: 10px 0;
-}
+
 
 /* Dodatan vizualni efekt za boxeve (hover) */
-.container:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    transform: translateY(-3px);
-    transition: 0.3s;
-}
+
 button {
     background-color: #0f8a3e; /* zelena */
     border: 2px solid #0f8a3e;
@@ -74,4 +67,15 @@ input {
 
 .f {
     min-height: 100px;
+}
+.container {
+    pointer-events: none;
+}
+
+.container button,
+.container input {
+    pointer-events: auto;
+}
+.b,.c,.d{
+    text-align: left;
 }
