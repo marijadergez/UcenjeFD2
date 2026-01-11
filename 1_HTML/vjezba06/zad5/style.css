@@ -18,6 +18,14 @@ hr {
 
 }
 
+.intro{
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+  
+
 /* BUTTON */
 .button {
     background-color: #28c3c9;
@@ -55,7 +63,7 @@ section {
     display: flex;
     gap: 20px;
     justify-content: center; /* centrirani na stranici */
-    flex-wrap: wrap;         /* responsive: prelazak u novi red na manjim ekranima */
+   
 }
 
 /* MALI BOXEVI */
