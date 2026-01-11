@@ -1,53 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer</title>
+    <title>Ivan | Frontend Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <ul><DevIvan/></ul>
-    <ul>Početna</ul>
-    <ul>Vještine</ul>
-    <ul>Projekti</ul>
-    <ul>Kontakt</ul>
-    </header>
 
-    <h1>Bok,ja sam Ivan.</h1>
-    <h2>Frontend Developer.</h2>
-    <p>Kreiram monderne,brze i responzivne web stranice koristeći najnovije tehnologije.Pretvaram ideje u stvarna digitalna iskustva.</p>
+<header>
+    <nav>
+        <ul>
+            <li>DevIvan</li>
+            <li>Početna</li>
+            <li>Vještine</li>
+            <li>Projekti</li>
+            <li>Kontakt</li>
+        </ul>
+    </nav>
+</header>
 
-    <button>Kontaktiraj me </button>
- 
-    
- <section>
-    <h3>Moje vještine</h3>
-    <p>Kako izgleda moj proces rada</p>
-    <p>Pogledajte kako izgled amoj video o tome kako kodiram web stranice.</p>
+<h1>Bok, ja sam Ivan.</h1>
+<h2>Frontend Developer</h2>
+<p>Kreiram moderne, brze i responzivne web stranice koristeći najnovije tehnologije. Pretvaram ideje u stvarna digitalna iskustva.</p>
 
-    <div class="container">
-        <h2>HTML5 & CSS3</h2>
-        <p>Semantički markup, Flexbox, Grid ,Animacije</p>
-    </div>
-    <div class="container">
-        <h2>JavaScript</h2>
-        <p>ES6+, DOM manipulacija , Fetch API</p>
-    </div>
-    <div class="container">
-        <h2>React</h2>
-        <p>Komponente, State Management, Hooks</p>
-        
-    </div>
-    <div class="container">
-        <h2>UI/UX Dizajn</h2>
-        <p>Figma, Protoyping,Wireframing</p>
+<button class="button">Kontaktiraj me</button>
+
+<section>
+    <h3 class="section-title">Moje vještine</h3>
+
+    <!-- VELIKI CONTAINER ZA SVE BOXEVE -->
+    <div class="big-container">
+        <div class="container">
+            <h2>HTML5 & CSS3</h2>
+            <p>Semantički markup, Flexbox, Grid, Animacije</p>
+        </div>
+        <div class="container">
+            <h2>JavaScript</h2>
+            <p>ES6+, DOM manipulacija, Fetch API</p>
+        </div>
+        <div class="container">
+            <h2>React</h2>
+            <p>Komponente, State Management, Hooks</p>
+        </div>
+        <div class="container">
+            <h2>UI/UX Dizajn</h2>
+            <p>Figma, Prototyping, Wireframing</p>
+        </div>
     </div>
 </section>
-    <h3>Video prezentacija</h3>
 
-    <h3>Pronađi mne</h3>
+<h3 class="section-title">Video prezentacija</h3>
+
+<div class="container2">
+    <p>Kako izgleda moj proces rada</p>
+<p>Pogledajte kako izgleda moj video o tome kako kodiram web stranice.</p>
+   
 </div>
+</div>
+
+<h3 class="section-title">Pronađi me</h3>
+<footer>
+    <div class="footer-container">
+        <!-- LIJEVA POLA – sva tri polja jedno ispod drugog -->
+        <div class="footer-left">
+            <h3 class="section-title">Kontakt</h3>
+
+            <div class="footer-input-group">
+                <label for="name">Ime:</label>
+                <input type="text" id="name" placeholder="Vaše ime">
+            </div>
+
+            <div class="footer-input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Vaš email">
+            </div>
+
+            <div class="footer-input-group">
+                <label for="message">Vaša poruka:</label>
+                <textarea id="message" placeholder="Upišite poruku..."></textarea>
+            </div>
+
+            <button class="button">Pošalji poruku</button>
+        </div>
+
+        <!-- DESNA POLA – prazan box -->
+        <div class="footer-right"></div>
+    </div>
+</footer>
+
+
+
 </body>
 </html>

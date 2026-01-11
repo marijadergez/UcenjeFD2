@@ -1,9 +1,12 @@
 body {
-    background-color: #293853;
+background-color: #1f2a38;
     color: white;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* NASLOVI */
 h1 {
     text-align: center;
 }
@@ -12,54 +15,154 @@ h2 {
     color: #28c3c9;
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.container {
-    border: 2px solid #28c3c9;
-    padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-}
-
+/* BUTTON */
 .button {
     background-color: #28c3c9;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-}body{
-    background-color: #293853;
-    secondary-color: #28c3c9;
-    color: white;
-    font-family: Arial, sans-serif;   
-}
-h2{
-    color: #28c3c9;
-}
-h1{
-    text-align: center;
-}
-.button{
-    background-color: #28c3c9;
-}
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  
-    width: 250px;
-  
-    padding: 20px;
-    border: 2px solid #28c3c9;
-}
-section{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    border-radius: 5px;
 }
 
-   
+/* NAVIGACIJA */
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 20px;
+    margin: 0;
+}
+
+header nav ul li {
+    cursor: pointer;
+}
+
+/* SECTION – tekst i containeri po redovima */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* VELIKI CONTAINER ZA SVE BOXEVE */
+.big-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* centrirani na stranici */
+    flex-wrap: wrap;         /* responsive: prelazak u novi red na manjim ekranima */
+}
+
+/* MALI BOXEVI */
+.container {
+    border: 2px solid #d3d3d3; /* SVIJETLO SIVA */
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* NASLOVI SEKCIJA + CRTA */
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #28c3c9;
+    margin: 8px auto 0;
+}
+.container2{
+    max-width: 90rem;
+    padding: 2rem 3rem;
+    margin: 2rem auto;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    border: #d3d3d3 2px solid;
+}
+footer {
+    background-color: #1f2a38;
+    padding: 40px 20px;
+    color: white;
+}
+
+/* CONTAINER ZA DVA STUPCA */
+.footer-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* responsive */
+}
+
+/* LIJEVA POLA */
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* SVA POLJA ISTE ŠIRINE I VISINE */
+.footer-left .footer-input-group input,
+.footer-left .footer-input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #d3d3d3;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* textarea malo viša */
+.footer-left .footer-input-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* label */
+.footer-left .footer-input-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Button */
+footer .button {
+    background-color: #28c3c9;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* DESNA POLA – prazan box iste veličine */
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #d3d3d3; /* okvir da se vidi box */
+    border-radius: 10px;
+    min-height: 420px; /* visina približno ista kao lijeva strana */
+}
+
+/* Naslov sekcije */
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #28c3c9;
+    margin: 8px auto 0;
+}
