@@ -1,0 +1,28 @@
+body{
+    background: #023225;
+background: -moz-linear-gradient(left, #023225 0%, #03437C 62%, #0B5965 100%);
+background: -webkit-linear-gradient(left, #023225 0%, #03437C 62%, #0B5965 100%);
+background: linear-gradient(to right, #023225 0%, #03437C 62%, #0B5965 100%);
+
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+display: grid; 
+grid-template-columns:"a a a a"
+                    "b b c c"
+                    "d d e e"
+                    "f f f f";
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    border: grey 2px solid;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+h1, h2, h3{
+    text-align: center;
+    
+}
