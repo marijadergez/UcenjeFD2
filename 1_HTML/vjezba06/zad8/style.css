@@ -1,6 +1,5 @@
 body{
-    background-color: rgb(187, 210, 236);
-
+    background-color: #eef2f7;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     display: grid;
@@ -20,18 +19,22 @@ body{
 .c { grid-area: c; }
 .d { grid-area: d; }
 .container {
-    background-color: rgb(236, 228, 228);
+    background-color: #ffffff;
     color: #222;
-    padding: 10px;
-    border-radius: 2.0rem;
-    border: 2px solid gray;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
-
 .c {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+.d {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
 }
 .big-container {
     border: 1px solid gray;
@@ -41,24 +44,13 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     grid-column: span 4; /* zauzima sve stupce */
 }
-h1, h6, h3{
-    color: rgb(78, 140, 235);
-    text-align: left;
-    font-size: 12px;
-    }
+
     
 
 p{
     color: rgb(200, 200, 200);
     text-align: left;
     }
-h2{
-    color: rgba(0, 0, 0, 0.2);
-}
-
-h4, h5{
-    color:gray;
-}
 /*BODY (grid)
  ├── .a  (naslov)
  ├── .b  (tekst)
@@ -67,4 +59,41 @@ h4, h5{
  │     ├── kartica
  │     └── kartica
  └── .d  (footer)*/
- 
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+h1 {
+    font-size: 8px;
+     color: #3b82f6;
+}
+
+h2 {
+    font-size: 22px;
+    color: #111;
+}
+
+h3 {
+    font-size: 20px;
+    color: #3b82f6;
+}
+
+h4 {
+    font-size: 14px;
+    color: #555;
+}
+
+h5 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h6 {
+    font-size: 14px;
+    color: #3b82f6;
+}
