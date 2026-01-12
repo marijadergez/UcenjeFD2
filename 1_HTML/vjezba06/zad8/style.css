@@ -11,7 +11,7 @@ body{
         
     gap: 20px; /* razmak između boxeva */
          margin: 0;
-    padding: 30px;   /* da se boxevi odvoje od ruba */
+    padding: 20px 50px;   /* da se boxevi odvoje od ruba */
 }
 
 .a { grid-area: a; }
@@ -19,6 +19,7 @@ body{
 .c { grid-area: c; }
 .d { grid-area: d; }
 .container {
+    
     background-color: #ffffff;
     color: #222;
     padding: 24px;
@@ -37,6 +38,7 @@ body{
     color: #666;
 }
 .big-container {
+    
     border: 1px solid gray;
     background-color: rgb(54, 51, 51);
     padding: 20px;
