@@ -1,3 +1,22 @@
 body{
     background-color: antiquewhite;
 }
+
+@font-face{    /* moj css da bude svjestan dodatne datoteke fontas  moraju biti dva svojsta*/
+font-family: 'Ljubav';   /* upitnik */  
+src: url('../fonts/LavishlyYours-Regular.ttf') format("truetipe"); /*izasao sam van ../*/
+
+
+}
+@font-face{
+    font-family: 'Galada';
+    src: url('../fonts/Galada-Regular.ttf') format('truetipe');
+}
+@font-face{
+    font-family: 'Cabinet';
+    src: url('../fonts/CabinetGrotesk-Regular.woff2') format('woff2');
+}
+
+h1{
+    font-family: 'Cabinet', 'Times New Roman', serif ;  /*UPITNIK BEZ SHIFTA JEDNOSTRUKI NAVODNICI*/
+}
