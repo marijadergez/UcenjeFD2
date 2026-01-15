@@ -1,4 +1,4 @@
-let snowflakesCount = 200; // Snowflake count, can be overwritten by attrs
+let snowflakesCount = 600; // Snowflake count, can be overwritten by attrs
 let baseCSS = ``;
 
 
