@@ -1,0 +1,33 @@
+.root{
+   var(var(var(--granica))): 2px solid black; 
+
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif;   /*[] znaci niz*/
+}
+#grid{
+    display: grid;
+    grid-template-areas:
+    "a b c ";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.a{grid-area: a;
+    border-top:blue;
+}
+.b{grid-area: b;
+    border-left:blue;
+    border-bottom: black;
+    border-right: black;
+}
+.c{grid-area: c;
+   border-top:black;
+   padding: 20px;
+}
+ 
+
+form{
+    font-family: sans-serif;
+}
+
