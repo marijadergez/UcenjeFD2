@@ -1,0 +1,36 @@
+body{
+
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background:  #29aca1;
+    color: white;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: left;
+    height: 40px;
+}
+
+tbody > tr> td:first-child,
+thead > tr > th:first-child,
+thead > tr > th:last-child{
+    text-align: center;
+}
+
+tbody > tr > td:last-child{
+    color: #29aca1;
+    text-align: center;
+}
+
+td{
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+button{
+     background-color:  #29aca1;
+     border-radius: 0.5rem;
+}
