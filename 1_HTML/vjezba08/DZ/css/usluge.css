@@ -1,5 +1,7 @@
 body{
-
+    background: #05141E;
+   
+    
 }
 table{
     width: 100%;
@@ -29,7 +31,7 @@ tbody > tr > td:last-child{
 
 td{
     padding: 8px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #524f4f;
     color: white;
 }
 button{
