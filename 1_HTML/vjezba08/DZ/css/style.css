@@ -1,8 +1,10 @@
 body{
     background-color: rgb(10, 10, 10);
+    font-family: Arial, sans-serif;
 }
-.box1, .box2{   
+.box{   
     background-color: #3e4141;
+    color: white;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -10,12 +12,19 @@ body{
 }
 h1, p{
     color: white;
+    text-align: center;
+}
+h2{
+    color: #29aca1;
 }
 
-ul{
+nav{
     list-style-type: disc;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+    background-color: #3e4141;
   
 }
 
