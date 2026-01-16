@@ -13,6 +13,7 @@ th{
     font-size: 0.8em;
     text-align: left;
     height: 40px;
+    font-size: 17px;
 }
 
 tbody > tr> td:first-child,
@@ -29,8 +30,17 @@ tbody > tr > td:last-child{
 td{
     padding: 8px;
     border-bottom: 1px solid #ccc;
+    color: white;
 }
 button{
      background-color:  #29aca1;
      border-radius: 0.5rem;
+     color: white;
+     height: 2rem;
+     width: 6rem;
+}
+h6{
+    color: white;
+    text-align: center;
+    font-size: 20px;
 }
