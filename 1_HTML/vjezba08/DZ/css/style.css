@@ -80,14 +80,27 @@ background-color: #2d486b;
     display: flex;
     flex-direction: column;
 }
-.kontakt-box{
-    background-color: #05141E;
-    
-    margin-top: 20px;
-    border-color: #58595a;
+.kontakt{
+    padding: 10px;
+    background-color: #172a36;
+    border-radius: 2rem;
+    margin-top: 10px;
+    border-color: #818486;
     width: 900px;
-    height: 80px;
+    height: 800px;
     margin-left: 20%;
     margin-right: 20%;
 }
+.mali-kontakt{
+   background-color: #041724;
+    border-radius: 2rem;
+    margin-top: 10px;
+    border-color: #58595a;
+    width: 600px;
+    height: 200px;
+    margin-left: 7%;
+    margin-right: 7%; 
+}
+
+
 
