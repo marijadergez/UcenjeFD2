@@ -8,6 +8,7 @@ background: radial-gradient(ellipse at center, #05141E 0%, #0B2A3F 50%, #030B11 
     margin-left: 10%;
     margin-right: 20%;
    
+   
     
 }
 header{
@@ -21,9 +22,7 @@ header{
 }
 .box{   
     box-sizing: border-box;
-    
-    
-    
+    border-color: #58595a;
     max-width: 600px;
     min-height: 400px;
 background-color: rgb(51, 50, 50);
@@ -76,3 +75,19 @@ background-color: #2d486b;
     align-content: center;
     
 }
+
+.unos{
+    display: flex;
+    flex-direction: column;
+}
+.kontakt-box{
+    background-color: #05141E;
+    
+    margin-top: 20px;
+    border-color: #58595a;
+    width: 900px;
+    height: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
