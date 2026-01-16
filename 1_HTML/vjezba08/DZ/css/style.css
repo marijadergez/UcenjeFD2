@@ -77,6 +77,9 @@ background-color: #2d486b;
 }
 
 .unos{
+    border-color: #58595a;
+    background-color: #0B2A3F;
+    border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     width: 900px;
@@ -96,7 +99,7 @@ background-color: #2d486b;
     margin-top: 70px;
     border-color: #818486;
     width: 900px;
-    height: 800px;
+    height: 900px;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -106,10 +109,18 @@ background-color: #2d486b;
     margin-top: 10px;
      border: 2px solid;
     border-color: #58595a;
-   
+   color: #58595a;
     width: 800px;
     height: 200px;
    margin: auto;
+   padding: 18px;
+}
+button{
+    background-color: #29aca1;
+    color: #030B11;
+    width: 900PX;
+    height: 80px;
+    font-size: 19px;
 }
 
 
