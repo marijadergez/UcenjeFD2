@@ -1,3 +1,21 @@
 body{
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(10, 10, 10);
 }
+.box1, .box2{   
+    background-color: #3e4141;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+h1, p{
+    color: white;
+}
+
+ul{
+    list-style-type: disc;
+    display: flex;
+    gap: 20px;
+  
+}
+
