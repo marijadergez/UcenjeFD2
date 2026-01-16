@@ -132,5 +132,30 @@ button{
 
 }
 
+.container{
+    border: 2px grey;
+    border-radius: 1.5rem;
+    gap: 5px;
+    max-width: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:"a b c d"
+    "e f g h"
+    "i j k l";
+  
+}
+.a{grid-area: a;}
+.b{grid-area: b;}
+.c{grid-area: c;}
+.d{grid-area: d;}
+.e{grid-area: e;}
+.f{grid-area: f;}
+.g{grid-area: g};
+.h{grid-area: h;}
+.i{grid-area: i;}
+.j{grid-area: j;}
+.k{grid-area: k;}
+.l{grid-area: l;}
+
 
 
