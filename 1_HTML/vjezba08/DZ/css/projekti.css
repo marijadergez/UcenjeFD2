@@ -1,0 +1,21 @@
+
+
+.container{
+    border: 2px grey;
+    border-radius: 1.5rem;
+    gap: 10px;
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "1 2 3 4"
+    "5 6 7 8"
+    "9 10 11 12";
+  
+}
+.a{grid-area: a;}
+.b{grid-area: b;}
+.c{grid-area: c;}
+.d{grid-area: d;}
+.e{grid-area: e;}
+.f{grid-area: f;}
+
