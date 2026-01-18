@@ -22,7 +22,7 @@ header{
 }
 .box{   
     box-sizing: border-box;
-    border-color: #58595a;
+    border-color: 2px solid #58595a;
     max-width: 600px;
     min-height: 400px;
 background-color: rgb(51, 50, 50);
