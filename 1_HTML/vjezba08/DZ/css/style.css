@@ -3,8 +3,9 @@ body{
 background: -moz-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
 background: -webkit-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
 background: radial-gradient(ellipse at center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand',  sans-serif;
     src: url(../font/Quicksand-VariableFont_wght.ttf) format("truetype");
+    
     margin-left: 10%;
     margin-right:10%;
    
@@ -28,7 +29,9 @@ header{
     background-color: rgb(51, 50, 50);
     color: white;
     padding: 20px;
-    margin:20px;
+margin-top: 5%;
+margin-left: 25%;
+margin-right: 20%;
    
     border-radius: 10px;
     border-left: 5px solid #29aca1;
@@ -47,10 +50,12 @@ h2{
 }
 
 h3{
-    font-size: 0.7em;
+    font-size: 0.8rem;
 }
 h4{
-    font-size: 0.8em;
+    font-size: 1.0rem;
+    font-weight: lighter;
+  
 }
 h5{
     font-style: italic;
@@ -118,12 +123,13 @@ background-color: #2d486b;
    margin: auto;
    padding: 18px;
 }
-button{
+.btn primary{
     background-color: #29aca1;
     color: #030B11;
     width: 900PX;
     height: 80px;
     font-size: 19px;
+    border-radius: 1.2rem;
 }
 .image{
     display: flex;

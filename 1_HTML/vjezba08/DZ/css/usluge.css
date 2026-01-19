@@ -7,6 +7,17 @@ table{
     width: 100%;
     border-collapse: collapse;
 }
+button{
+    font-family: 'Quicksand', 1.5rem, bold;
+     background-color:  #29aca1;
+     border-radius: 0.5rem;
+     color: white;
+     height: 2rem;
+     width: 1rem;
+     height: 0.5rem;
+    
+}
+
 
 th{
     background:  #29aca1;
@@ -35,14 +46,7 @@ td{
     color: white;
     text-align: left;
 }
-button{
-    font-family: 'Quicksand', 1.5rem, bold;
-     background-color:  #29aca1;
-     border-radius: 0.5rem;
-     color: white;
-     height: 2rem;
-     width: 6rem;
-}
+
 h6{
     color: white;
     text-align: center;

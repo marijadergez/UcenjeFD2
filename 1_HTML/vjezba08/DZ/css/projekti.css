@@ -5,8 +5,8 @@ background: -webkit-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100
 background: radial-gradient(ellipse at center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
     font-family: 'Quicksand', sans-serif;
     src: url(../font/Quicksand-VariableFont_wght.ttf) format("truetype");
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 10%;
+    margin-top: auto;
     
 }
 header{
@@ -49,6 +49,7 @@ h3{
 }
 h4{
     font-size: 0.8em;
+    font-weight: lighter;
 }
 h5{
     font-style: italic;
@@ -61,10 +62,12 @@ nav{
     gap: 50px;
     color: white;
      background-color: #2d486b;
-    font-size: medium;
+    font-size: larger;
     width: 100%;
     height: 90px;
-    text-align: center;
+     text-align: center;
+    
+   
 }
 footer{
     margin-top: 80px;
@@ -93,8 +96,15 @@ background-color: #2d486b;
     
 
 }
-@font-face {
-    font-family: 'Bitcount';
-    src: url(../font/BitcountSingle_Cursive-Regular.ttf) format(truetipe);
-}
 
+
+p2{ color: #29aca1;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace
+    
+}
+p3{
+    color: white;
+    
+    font-size: 1.6rem;
+}
