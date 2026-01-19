@@ -48,8 +48,8 @@ nav{
     border: 2px solid ;
     margin-top: 70px;
     border-color: #818486;
-    width: 900px;
-    height: 300px;
+    width: 800px;
+    height: 600px;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -85,12 +85,12 @@ h4{
 h5{
     font-style: italic;
 }
-.little{
-    color: white;
+
+.btn-secondary{
     background-color: #29aca1;
-    border-radius: 0.5rem;
-    font-size: larger;
-    width: 200px;
-    height: 50PX;
-   
+    color: #030B11;
+    width: 100PX;
+    height: 50px;
+    font-size: 19px;
+    border-radius: 1.2rem;
 }
