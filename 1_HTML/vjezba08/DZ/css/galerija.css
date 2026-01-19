@@ -40,20 +40,20 @@ nav{
    
 }
 
-
-aside{
-    
+.kontakt{
+    align-content: center;
     padding: 30px;
     background-color: #172a36;
     border-radius: 2rem;
     border: 2px solid ;
-    margin-top: 20px;
+    margin-top: 70px;
     border-color: #818486;
-    width: 600px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
     margin-left: 20%;
     margin-right: 20%;
 }
+
 
 footer{
     margin-top: 80px;
