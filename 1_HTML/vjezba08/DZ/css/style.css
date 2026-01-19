@@ -123,7 +123,7 @@ background-color: #2d486b;
    margin: auto;
    padding: 18px;
 }
-.btn primary{
+.btn-primary{
     background-color: #29aca1;
     color: #030B11;
     width: 900PX;
@@ -132,11 +132,12 @@ background-color: #2d486b;
     border-radius: 1.2rem;
 }
 .image{
+    margin-top: 4%;
     display: flex;
     gap: 10px;
-    width: 500px;
-    height: 300px;
-    margin-left: 5%;
+    width: 600px;
+    height: 350px;
+    margin-left: 12%;
     border-radius: 1.5rem;
 
 }
