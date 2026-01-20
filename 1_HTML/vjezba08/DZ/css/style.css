@@ -53,7 +53,7 @@ h3{
     font-size: 0.8rem;
 }
 h4{
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     font-weight: lighter;
   
 }
@@ -149,6 +149,10 @@ nav UL {
     margin: 0;
 }
 
-
+.highlight {
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
