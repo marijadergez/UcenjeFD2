@@ -6,6 +6,7 @@ body{
 table{
     width: 100%;
     border-collapse: collapse;
+    font-size: 19px;
 }
 button{
     font-family: 'Quicksand', 1.5rem, bold;
@@ -26,7 +27,7 @@ th{
     font-size: 0.9em;
     text-align: left;
     height: 60px;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 tbody > tr> td:first-child,
@@ -54,4 +55,20 @@ h6{
     color: white;
     text-align: center;
     font-size: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+nav a:hover {
+    color: #29aca1;
+}
+nav li {
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+nav li:hover {
+    background-color: #29aca1;
 }
