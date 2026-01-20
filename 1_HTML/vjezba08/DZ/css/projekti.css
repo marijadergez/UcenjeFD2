@@ -3,13 +3,14 @@ body{
 background: -moz-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
 background: -webkit-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
 background: radial-gradient(ellipse at center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
-    font-family: 'Quicksand', sans-serif;
-    src: url(../font/Quicksand-VariableFont_wght.ttf) format("truetype");
     
- 
+}
+@font-face{
+
   font-family: 'Quicksand';
   src: url('../font/Quicksand-VariableFont_wght.ttf') format('truetype');
-}
+    }
+
 
 header{
     margin-top: 1%;
@@ -28,13 +29,14 @@ header{
     grid-template-columns: repeat(3, 1fr);
     gap: 65px;   
     border-radius: 1.5rem;
-    margin-top: 5%; 
+    margin-top: 15%; 
     background-color: #05141E;
     border: 2px solid #58595a;
-    max-width: 1800px;
+    max-width: 1600px;
     min-height: 1000px;
     padding: 2%;
-    margin-left: 10%;
+   
+    margin: auto;
 }
 h1{
    color: white;
@@ -91,12 +93,12 @@ background-color: #2d486b;
     
     box-sizing: border-box;
     border-color: 2px solid #58595a;
-    max-width: 600px;
+    max-width: 470px;
     min-height: 400px;
     background-color:#0B2A3F;
     color: white;
     padding: 20px;
-    margin:20px;
+    margin:auto;
    
     border-radius: 1.5rem;
     box-shadow: #58595a;
