@@ -41,17 +41,18 @@ nav{
 }
 
 .kontakt{
-    align-content: center;
+  
     padding: 30px;
     background-color: #172a36;
     border-radius: 2rem;
     border: 2px solid ;
     margin-top: 60px;
-    border-color: #818486;
+    border-color:#29aca1;
     width: 800px;
     height: 600px;
     margin-left: 20%;
     margin-right: 20%;
+    align-items: center;
 }
 
 
