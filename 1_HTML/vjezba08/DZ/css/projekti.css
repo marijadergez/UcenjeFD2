@@ -5,13 +5,10 @@ background: -webkit-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100
 background: radial-gradient(ellipse at center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
     
 }
-@font-face{
-
-  font-family: 'Quicksand';
-  src: url('../font/Quicksand-VariableFont_wght.ttf') format('truetype');
-    }
-
-
+@font-face {
+    font-family: 'Source' !important;
+    src: url(../font/SourceCodePro-VariableFont_wght.ttf) format(truetipe);
+}
 header{
     margin-top: 1%;
     background-color: #2d486b;
