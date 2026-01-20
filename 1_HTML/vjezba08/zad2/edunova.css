@@ -1,0 +1,18 @@
+.neural-background{
+    animation: none;
+    background: radial-gradient(circle at 15% 85%, rgba(93, 194, 224, 0.7) 0%, transparent 50%), radial-gradient(circle at 85% 15%, rgba(52, 197, 52, 0.8) 0%, transparent 50%), radial-gradient(circle at 45% 60%, rgba(27, 204, 189, 0.6) 0%, transparent 50%), radial-gradient(circle at 70% 40%, rgba(34, 139, 34, 0.4) 0%, transparent 50%), linear-gradient(135deg, rgb(10, 10, 10) 0%, rgb(104, 84, 121) 50%, rgb(0, 0, 0) 100%);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #39dde2, #2df08f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    animation: logoGlow 3s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
