@@ -24,8 +24,8 @@ header{
 .box{   
     box-sizing: border-box;
     border-color: 2px solid #58595a;
-    max-width: 600px;
-    min-height: 400px;
+    max-width: 800px;
+    min-height: 500px;
     background-color:#172a36;
     color: white;
     padding: 20px;

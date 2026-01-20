@@ -46,7 +46,7 @@ nav{
     background-color: #172a36;
     border-radius: 2rem;
     border: 2px solid ;
-    margin-top: 70px;
+    margin-top: 60px;
     border-color: #818486;
     width: 800px;
     height: 600px;
@@ -87,6 +87,8 @@ h5{
 }
 
 .btn-secondary{
+    margin-bottom: 5px;
+    gap: 20px;
     background-color: #29aca1;
     color: #030B11;
     width: 100PX;
@@ -94,6 +96,7 @@ h5{
     font-size: 19px;
     border-radius: 1.2rem;
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -101,4 +104,12 @@ nav a {
 }
 nav a:hover {
     color: #29aca1;
+}
+nav li {
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+nav li:hover {
+    background-color: #29aca1;
 }
