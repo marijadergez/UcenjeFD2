@@ -114,3 +114,10 @@ p3{
     
     font-size: 1.6rem;
 }
+nav li {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
