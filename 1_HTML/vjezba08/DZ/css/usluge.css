@@ -2,7 +2,11 @@ body{
     background: #05141E;
    
     
+
+  font-family: 'Quicksand';
+  src: url('../font/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
+
 table{
     width: 100%;
     border-collapse: collapse;

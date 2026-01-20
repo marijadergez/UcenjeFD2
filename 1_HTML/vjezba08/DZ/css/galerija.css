@@ -3,15 +3,17 @@ body{
 background: -moz-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
 background: -webkit-radial-gradient(center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
 background: radial-gradient(ellipse at center, #05141E 0%, #0B2A3F 50%, #030B11 100%);
-    font-family: 'Quicksand',  sans-serif;
-    src: url(../font/Quicksand-VariableFont_wght.ttf) format("truetype");
-    
+   
     margin-left: 10%;
     margin-right:10%;
    
    
     
+
+  font-family: 'Quicksand';
+  src: url('../font/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
+
 header{
     background-color: #2d486b;
     width: 100%;
