@@ -1,0 +1,111 @@
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+.panel{
+
+    border: 1px solid black;
+    min-height: 200px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;  
+    padding: 0;   
+    display: flex;  /*row da ide jedan ispod drugog na mobu */
+    flex-direction: column;
+    gap: 2rem; 
+
+}
+li a{
+    text-decoration: none; /*da makne underline*/
+    color: black;
+    font-size: 2rem;
+
+}
+
+li{
+    text-align: center;
+}
+
+.a (grid-area: a;)
+.b (grid-area: b;)
+.c (grid-area: c;)
+.d (grid-area: d;)
+
+              /*redefiniranje ponasanja*/
+/*tablet*/
+
+@media (min-width: 425px) and (max-width: 600px) {
+        body{
+            background-color: aliceblue
+        }
+        ul{
+            flex-direction: row;  /*horizontalni skorler se nesmije pojaviti*/
+            }
+            .container{
+                display: grid;
+                grid-template-areas: 
+                "a b"
+                "c d";
+            }
+        
+} /*obavezno px  moze vise različitih definicija*/
+
+ /*veci tabket*/
+ 
+@media (min-width: 601px){
+        body{
+            background-color: beige;
+
+        }
+
+        ul{
+            flex-direction: row; /*da ga zadrzi*/
+        }   
+        .container{
+                display: grid;
+                grid-template-areas: 
+                "a b"
+                "c c"
+                "d d";
+            }
+}
+
+/* desktop */
+
+@media (min-width: 850px)  {
+        body{
+            background-color: chocolate; /*radi kad promjenim u pregledniku sirinu okvira*/
+        }
+        .container{
+                display: grid;
+                grid-template-areas: 
+                "a b c d";
+            }
+
+}
+
+@media print{
+    header, div.container /*makne se konteneri sa printa*/
+  {
+        display:none; /*kada idem printat nemoj pokazat taj elemnt*/
+    }
+    h1{
+        font-family: serif;
+    }
+    p{
+        text-align: justify;
+        font-size: 1.5rem;
+        text-indent: 10px; /*ako zelim uvuc*/
+    }
+}
+
+/*za crne ekrane nocni rad*/
+@media (prefers-color-scheme: dark){
+    li a {
+        color: white;
+        background-color: black;
+    }
+}

@@ -1,0 +1,63 @@
+body{
+    background-color: bisque;
+ 
+
+}
+.container{
+    background-color: aqua;
+    box-sizing: border-box;
+  
+
+}
+.a (grid-area: a;)
+.b (grid-area: b;)
+.c (grid-area: c;)
+.d (grid-area: d;)
+.e (grid-area: e;)
+.f (grid-area: f;)
+
+
+  
+.panel {
+    background-color: aqua;
+    border: 2px solid black;
+    gap: 10px;
+    min-height:100px;
+
+}
+
+
+ /*veci tabket*/
+ 
+@media (min-width: 601px){
+        body{
+            background-color: beige;
+
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "b"
+            "c f";
+        }
+
+    }
+
+    @media (min-width: 250px)  {
+        body{
+            background-color: chocolate; /*radi kad promjenim u pregledniku sirinu okvira*/
+        }
+        .container{
+                display: grid;
+                grid-template-areas: 
+                "c d e";
+            }
+        }
+@media (min-width:900px) {
+ 
+      grid-template-areas: 
+      "a b"
+      "b c d"
+      "e f";
+      
+    }
