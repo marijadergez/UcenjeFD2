@@ -7,6 +7,7 @@ body{
     background-color: aqua;
     box-sizing: border-box;
   
+  
 
 }
 .a (grid-area: a;)
@@ -23,7 +24,7 @@ body{
     border: 2px solid black;
     gap: 10px;
     min-height:100px;
-
+    box-sizing: border-box;
 }
 
 
