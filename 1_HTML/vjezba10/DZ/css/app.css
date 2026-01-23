@@ -1,3 +1,13 @@
-textarea{
-    width: 800px;
+.grid-container{
+    background-color: blueviolet;
+}
+h2{
+    font-size: 1.3rem;
+}
+.card{
+    width: 200px;
+    height: 100px;
+    padding: 1%;
+    gap: 10px;
+
 }
