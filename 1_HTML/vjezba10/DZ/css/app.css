@@ -2,12 +2,16 @@
     background-color: blueviolet;
 }
 h2{
-    font-size: 1.3rem;
+    font-size: 1.0rem;
 }
 .card{
     width: 200px;
     height: 100px;
     padding: 1%;
     gap: 10px;
+
+}
+.img{
+    size: 200px 100px;
 
 }
