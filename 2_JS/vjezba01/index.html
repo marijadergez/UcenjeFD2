@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Hello world</title>
+    <style>
+        .nojs{
+            background-color: red;
+            color: white;
+            font-size: 2rem;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="ispis">
+
+    </p>
+
+    <div id="ue">
+
+    </div>
+
+    <button onclick="alert('Hello world 9')">
+        Klikni me
+    </button>
+
+    <div 
+    
+    onmouseover="this.style.backgroundColor='red'"
+    onmouseleave="this.style.backgroundColor='white'"
+    >
+        Edunova
+    </div>
+    <input type="text" name="" id=""
+    onkeyup="this.value=this.value.toUpperCase()">
+    
+    
+    <noscript>
+        <div class="nojs">
+            Vaš preglednik ne podržava JavaScript!
+        </div>
+    </noscript>
+    <!-- akozelimo izvoditi js direktno iz html  -->
+    <script>
+     // ovo je jedna linija komentara
+
+     /*
+     komentar kroz 
+     više linija*/
+
+       // alert('Hello world 1'); // točka zarez netreba stavlja ju profesor
+       //alert je skocni prozor koji se pojavljuje ako maknem //
+
+     document.write('Hello world 2');
+
+     console.log('Hello world 3'); //console je na stranici html inspect 
+
+
+     //console.logiraj('Hello world 4');
+    </script>
+
+    <script src="skripta.js"></script>
+
+</body>
+</html>
