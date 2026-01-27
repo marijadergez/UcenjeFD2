@@ -12,9 +12,9 @@ console.log('Mc\' Donalds');  //ALTGR+Q dobiješ \
 console.log("Mc 'Donalds");
 
 
-console.log('Onda radim \\ ovo'); /*u konzoli backslash*/
+console.log('Onda radim \\ ovo'); /*u konzoli backslash*/ /*obrnuti navodnik altgr+q*/
 
-console.log(`
+console.log(`    
     Ovo je mojj
     tekst
     kroz više redova
