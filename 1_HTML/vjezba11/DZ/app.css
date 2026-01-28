@@ -1,0 +1,26 @@
+.card{
+    background-color: rgb(59, 57, 57);
+    width: 600px;
+    height: 600px;
+    margin:auto;
+    
+    margin-top: 10%;
+ 
+    
+}
+blockquote{
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+    margin: auto;
+}
+.btn-primary{
+    margin-top: 30%;
+    width: 80%;
+    height: 30%;
+    border-radius: 2rem;
+    background-color: aquamarine;
+}
+h2{
+    font-size: 20px;
+   padding: 10%;
+}
