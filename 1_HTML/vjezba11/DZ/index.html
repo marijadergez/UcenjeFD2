@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="app.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 <body>
 
 
@@ -25,6 +27,19 @@
   </li>
 </ul>
 
+<div id="particles-js" style="position:fixed; width:100%; height:100%; z-index:-1;"></div>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 100 },
+    "color": { "value": "#ffffff" },
+    "shape": { "type": "circle" },
+    "size": { "value": 2 },
+    "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
+    "move": { "enable": true, "speed": 1 }
+  }
+});
+</script>
 
 
 
@@ -75,7 +90,8 @@
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
             <div class="card p-4 text-center">
-              A 
+              A  <strong>This is the first item’s accordion body.</strong> It is shown by default,use tori go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
             </div>
           </div>
         </div>
@@ -91,7 +107,8 @@
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
             <div class="card p-4 text-center">
-              B
+              B <strong>This is the first item’s accordion body.</strong> It is shown by default,use tori go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
             </div>
           </div>
         </div>
@@ -104,7 +121,8 @@
         <div class="row justify-content-center">
           <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
             <div class="card p-4 text-center">
-              C
+              C  <strong>This is the first item’s accordion body.</strong> It is shown by default,use tori go within the <code>.accordion-body</code>, though the transition does limit overflow.
+
             </div>
           </div>
         </div>
@@ -130,10 +148,13 @@
 
 
 
-    
- <div class="fixed-bottom"><h5>Sva prava pridržana 💬 | Chat  <br>  Pratite nas na društvenim mrežama : ▶️YouTube🔴  🅾ⓕ </h5>
-  
+  <div class="fixed-bottom bg-dark text-light text-center p-2">
+  <h5 class="mb-0">
+    Sva prava pridržana 💬 | Chat  <br>
+    Pratite nas na društvenim mrežama: ▶️ YouTube 🔴 🅾ⓕ
+  </h5>
 </div>
+
 
     <script src="bootstrap.bundle.min.js"></script>
 </body>
