@@ -57,3 +57,8 @@ h5{
 .card-text{
     text-align: right;
 }
+.popis{
+    text-justify: auto;
+    gap: 5%;
+
+}
