@@ -57,8 +57,9 @@ h5{
 .card-text{
     text-align: right;
 }
-.popis{
-    text-justify: auto;
-    gap: 5%;
-
+.accordion{
+    height: 30px;
+    margin:auto;
+    text-align: center;
+    padding: 12%;
 }
