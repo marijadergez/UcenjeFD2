@@ -7,7 +7,7 @@ background: linear-gradient(to bottom, #092335 0%, #294356 85%, #061620 100%);
     
     margin:auto;
     
-    margin-top: 15%;
+    margin-top: 5%;
     
 -webkit-box-shadow: 5px 5px 15px 5px #3d8faf; 
 box-shadow: 5px 5px 15px 5px #285e7e;
@@ -47,7 +47,7 @@ h2{
     width: 700px;
     height: 330px;
     margin:auto;
-    margin-top: 10%;
+    margin-top:10%;
 }
 
 h5{
@@ -59,7 +59,7 @@ h5{
 }
 .accordion{
     height: 30px;
-    margin:auto;
+    
     text-align: center;
     padding: 12%;
 }
