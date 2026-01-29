@@ -25,21 +25,102 @@
   </li>
 </ul>
 
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+      class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+  </div>
 
+  <!-- Slides -->
+  <div class="carousel-inner">
 
-    <div class="container-fluid">
-
-         <div class="col-12">
-            <div class="card">A</div>
-         <div class="col-12">
-            <div class="card">B</div>
-         <div class="col-12">
-            <div class="card">C</div>
-       
+    <!-- Slide A -->
+    <div class="carousel-item active">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <img src="./img3.jpg" class="card-img-top" alt="Galerija slika">
+              <div class="card-body text-center">
+                <p class="card-text">Tehničke vještine</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Slide B -->
+    <div class="carousel-item">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <img src="./img1.jpg" class="card-img-top" alt="Galerija slika">
+              <div class="card-body text-center">
+                <p class="card-text">STEM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Slide C -->
+    <div class="carousel-item">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+            <div class="card h-100">
+              <img src="./img2.webp" class="card-img-top" alt="Galerija slika">
+              <div class="card-body text-center">
+                <p class="card-text">Karijera unutar grid programa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+
+
+    
+ <div class="fixed-bottom"><h5>Sva prava pridržana</h5></div>
 
     <script src="bootstrap.bundle.min.js"></script>
 </body>

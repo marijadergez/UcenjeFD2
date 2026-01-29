@@ -5,27 +5,32 @@
     margin:auto;
     
     margin-top: 10%;
- 
-    
 }
 blockquote{
     box-sizing: border-box;
     background-color: blanchedalmond;
     margin: auto;
 }
-.btn-primary{
-    margin-top: 30%;
-    width: 80%;
-    height: 30%;
+
+    .btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
     border-radius: 2rem;
     background-color: aquamarine;
-}
+    }
 h2{
     font-size: 20px;
    padding: 10%;
 }
-.btn {
+.one-card {
+    border-radius: 2rem;
+     background-color: rgb(59, 57, 57);
+    width: 700px;
+    height: 330px;
+    margin:auto;
     margin-top: 10%;
-    width: 100%;
-    background-color:aquamarine;
 }
+
