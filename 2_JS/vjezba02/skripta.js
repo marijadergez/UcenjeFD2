@@ -95,12 +95,31 @@ console.log(godine > 18) // false    //dali je godine veće od 18
 console.log(godine >= 18) // true
 
 //dva izraza koji mogu biti true ili false
+
 //-- logički operatori 
-//bool-ovi operatori : AND   OR   NOT  (tablica online)
+//bool-ovi operatori : AND   OR   NOT  ( bool table)
 console.log(godine>=18) //true
 console.log(godine>=21) //false
+console.log( i1 && i2) //false
 //punoljetan u svim državama
-//logični AND && ->  u JS se ne smije koristiti samo jedan &
+
+//logični AND &&    ->  u JS se ne smije koristiti samo jedan &
+console.log( godine>=18  && godine>=21)  //  gledam kod iznad imam true i false binarno 
+//i1       i2      rez(i1 &&i2)
+//false    false   false
+//false    true    false
+//true     false   false
+//true     true     true
+
+
+//logički OR ||     AltGr + W >NE SMIJE SE KORISTITI SAMO JEDAN |
+console.log(i1 || i2) //true
+//false    false   false
+//false    true    true
+//true     false   true
+//true     true     true
+
+
 
 
 
