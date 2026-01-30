@@ -18,28 +18,43 @@
 </head>
 <body>
 
-    <p id="ispis">
+    <p id="ispis">     
+         <!-- p#id -->
 
     </p>
-
+   <!-- div#ue -->
     <div id="ue">
 
     </div>
 
-    <button onclick="alert('Hello world 9')">
+    <noscript>
+        <div class="nojs">
+            <!-- Vaš preglednik ne podržava Java Scpit  -->
+        </div>
+    </noscript>
+
+
+<!-- atributi događaja onclick   kad klikne button pojavi se skocni prozor na html -->
+    <button onclick="alert('Hello world 9')">   
         Klikni me
     </button>
 
+
+    <!-- prije slova v od diva da prenese znak vece od -->
+     <!-- kad dodje misem na edunova onda polje pocrveni -->
     <div 
-    
     onmouseover="this.style.backgroundColor='red'"
     onmouseleave="this.style.backgroundColor='white'"
     >
         Edunova
     </div>
-    <input type="text" name="" id=""
-    onkeyup="this.value=this.value.toUpperCase()">
+
+
+    <input type="text" name="" id="" style="font-size: 2rem;"
+    onkeyup="this.value=this.value.toUpperCase()"
+    >
     
+    <!-- onkeyup je kad pustim znak -->
     
     <noscript>
         <div class="nojs">
