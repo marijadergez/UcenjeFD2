@@ -173,13 +173,13 @@ pozdrav(); //ovo ispise pozdrav 1 je je to pizv na funciju
 
 
 const pozdravi = () => console.log('Pozdrav 2');
-console.log(typeof pozdravi, pozdravi);
+console.log(typeof pozdravi, pozdravi); //pozdravi je varijabla 
 pozdravi();
 
-const kompleksnije = (x,y) => {
-    x = x + 3; // x = 5
-    y = --y + x; // y = 6
-    return x+y;
+const kompleksnije = (x,y) => {   //funkcija prima dva parametra*/
+    x = x + 3; // x = 5   y=2
+    y = --y + x; // y = 6    u consoli ispisuje 11
+    return x+y; //vraca vrijednosti i ubacis console.log
 };
 
 
@@ -203,7 +203,7 @@ console.log('2'==2); // true
 console.log('2'===2); //false
 console.log(2 === 2); //true
 
-
+//simbol osigurava da je to vrijednost
 
 
 
