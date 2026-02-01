@@ -90,7 +90,7 @@ console.log( 5 === '5') //false  number string
 console.log( 3 != 5)// true   BULEAN
 
 //<, >, <=, =>
-const.log = 18        //prvi veći od 18 je 19  što bi dalo:
+let godine = 18        //prvi veći od 18 je 19  što bi dalo:
 console.log(godine > 18) // false    //dali je godine veće od 18
 console.log(godine >= 18) // true
 
@@ -103,21 +103,103 @@ console.log(godine>=21) //false
 console.log( i1 && i2) //false
 //punoljetan u svim državama
 
-//logični AND &&    ->  u JS se ne smije koristiti samo jedan &
-console.log( godine>=18  && godine>=21)  //  gledam kod iznad imam true i false binarno 
-//i1       i2      rez(i1 &&i2)
-//false    false   false
+//logički AND &&    ->  u JS se ne smije koristiti samo jedan &
+const i1 = godine >= 18 //true
+const i2 = godine >= 21  //false
+console.log (i1 && i2) //false 
+//ako mi je i1
+//i1       i2      rez(i1 &&i2)    booltable and    not i or
+//false    false   false               
 //false    true    false
 //true     false   false
 //true     true     true
+    /*  gledam kod iznad redove imam 
+true i false binarno i nisu oba uvjeta zadovoljena zato bude false */
 
 
 //logički OR ||     AltGr + W >NE SMIJE SE KORISTITI SAMO JEDAN |
-console.log(i1 || i2) //true
+console.log(i1 || i2) //true   booltable or
 //false    false   false
 //false    true    true
 //true     false   true
 //true     true     true
+
+
+/*ctrl shift v unosis ai da neubaci sliku */
+
+console.log (!i1)  //i1 je bio true i onda ceispisat false
+// logički NOT
+//i1     rez  (!i1)
+//false   true
+//true    false
+
+
+
+//sljedeći operator 
+//ternarni operator  (?:)      -ako je osoba više ili jednako 18 punoljetna inače je maljoljetna
+console.og (godine >= 16 ? 'Punoljetan' : 'Maloljetan') /*ako je (godine >= 18 ? true ispisat ce se punoljetan 
+inače je false,vrijednost varijable godine je 18 kad bi na 15*/ /*tamo gore smo const godine
+prebacili u let godine = 18 da mozemo  dalje*/ /*onda smo 18 promjenili u 16*/
+
+//operator spajanja  (nadoljepljivanja) -  CONCETINATION
+
+const skola = 'Edunova'
+console.log ('Najbolja skola je' + skola) //ovo se ne preporuča  ispred backticksa vitičasta je bolje
+console.log ('Najbolja škola je $'{skola}) 
+const razred = 4
+console.log('Idem u ' +  razred +'razred')
+console.log (`Idem u $ {razred}. razred`) /*backticks bolja verzija napisanog istog*/ 
+
+// spread operator - operator proširivanja  nizova i objekata (...)//
+//na nizu-u
+
+const niz = [2,2,1,1]
+console.log(niz)
+const noviNiz =[0,...niz, 3]
+console.log(noviNiz)  //ovaj red garbage colector unisti 
+//na objektu mjesto nizu
+const osoba={
+    ime:'Pero'
+    prezime:'Perić' /*to mi je dao backend i sad zelim ovaj objekt ;
+    const osoba={
+    ime:'Pero'
+    prezime:'Perić' i zelim još dodat jos jedno svojstvo- edukaciju */
+}
+//znaci uzmi sve iz osoba i dodaj mu proširi ga za edukacija i vrijednost edukacije 
+//će biti content developer:osoba je imala dva svojstva i polaznik ima sv estoj eimala osoba
+//i sad vidim da polaznik jos nije isao na edukaciju
+//mozes kako hoces oddavat i pokazuje na  [0,...niz, 3]
+console.table(osoba)
+const polaznik ={
+    ...osoba,
+    edukacija:'Frontend developer'
+}
+console.table(polaznik) //to je bio spread a suprtono od spread operartora jest:
+
+//postupak koji se zove destructing   -idem g arastavit jer je constanta
+//niz
+const [prvi, drugi] =[1,2] //s desne strane u nizu se nalaze dva elementa
+                          /*a ja rekao s lijeve strane napravi dvije varijable
+                          i dodijeli im vrijednost sa desne strane*/
+                          console.log (prvi)
+                          console.log(drugi)
+                          
+//objekt   /*koji ce iz polaznika izbaciti prezime  const viticasrta jer je objekt*/
+const {prezime, ...objektBezPrezimena} /*razbij ga na dvije varijable prva je
+        prezime drugo je objekt koji im asva svojstva od polaznik-(desna strana) osim prezimena
+    */
+console.table(objektBezPrezimena)
+//škart ili nnusproozvod
+console.log(prezime) 
+
+//nullish calescing operator    -ona znaci :
+//ako je vrijednost varijable null koristi nesto drugo
+let sifra = null
+console.log(sifra ?? 'Šifra nije definirana')
+
+
+
+
 
 
 const a=2, b=3; // jedan red deklariao dvije varijable ovdj esimuliram da je korisnik unio 2 i 3

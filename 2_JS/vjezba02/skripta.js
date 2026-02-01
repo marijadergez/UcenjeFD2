@@ -173,7 +173,7 @@ pozdrav(); //ovo ispise pozdrav 1 je je to pizv na funciju
 
 
 const pozdravi = () => console.log('Pozdrav 2');
-console.log(typeof pozdravi, pozdravi); //pozdravi je varijabla 
+console.log(typeof pozdravi, pozdravi); //pozdravi je varijabla a zapravo je funkcija i mozemo ju pozvat kao pozdravi
 pozdravi();
 
 const kompleksnije = (x,y) => {   //funkcija prima dva parametra*/
