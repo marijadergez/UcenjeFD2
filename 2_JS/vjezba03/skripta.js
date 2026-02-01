@@ -238,10 +238,30 @@ console.log (n instanceof Array) // true istina je istanca od array niza
 // in operator: provjerava u objektu postoji li svojstvo
 console.log('prezime' in osoba) //true  
 /*sad tui backend opet nesto*/
+console.log ('prezime' in objektBezPrezimena) //false jer ga nema
+
+// BINARNO NE KORISTIMO NA NASTAVI
+// SYMBOL NEĆEM OKORISTITI NA NASTAVI   red 241 iznad sve hoćemo
+//  0101 binarno je 5
+//  0011 binarno je 3
+//  ______
+//  0111  binaro 7
+// web koverter decimal to binary value calculator
+
+const binarno = 5 | 3 // ovo nije logički ili već je bitwise
+                        //binarni operator a ima i & 
+
+console.log(binarno)
+
+//  0101 binarno je 5
+//  0011 binarno je 3
+//  00101 binarno 1
+console.log ( 5 & 3)
 
 
 
 
+/*dolje je skolski sat rad*/
 
 
 const a=2, b=3; // jedan red deklariao dvije varijable ovdj esimuliram da je korisnik unio 2 i 3
