@@ -192,10 +192,52 @@ console.table(objektBezPrezimena)
 //škart ili nnusproozvod
 console.log(prezime) 
 
-//nullish calescing operator    -ona znaci :
+//nullish calescing operator   (??)        -ona znaci :
 //ako je vrijednost varijable null koristi nesto drugo
 let sifra = null
+console.log(sifra ?? 'Šifra nije definirana') 
+
+//definiram sifru tj backhand vrati sifru
+//guide example
+sifra = '8778-xgfhj9874fg-5x4ghf6x4fg6'
 console.log(sifra ?? 'Šifra nije definirana')
+
+
+//optional chaining operator (?.)
+
+//malo kompleksniji JSON
+const korisnik ={
+    adresa :{
+        grad: 'Osijek'
+       // ulica: 'Jagerova'
+    }
+}
+console.table (korisnik)
+console.log (korisnik.adresa.grad) //osijek
+console.log (korisnik.adresa.ulica) //jagerova
+//*ako backend ne vraca dobiva ulicu pise undefiend
+console.log(korisniki.adresa.ulica.toLocaleUpperCase) // JAGEROVA 
+//?. MI POMAŽE DA NEDOBIJE GREŠKU
+console.log(korisnik?.adresa?.ulica?.toLocaleUpperCase())
+/*greška prekida izvođenje vrati 
+backend ovo natrag ako je problem budeudefined*/
+
+//dva posebna operatora koji ispusuju naziv klase
+//typeof i instanceof
+const n = [2,3]
+console.log(typeof n) // object 
+// // to je niz ačl on ce ispisat object
+
+
+
+/*   [ niz ]  {object}   */
+
+
+console.log (n instanceof Array) // true istina je istanca od array niza
+
+// in operator: provjerava u objektu postoji li svojstvo
+console.log('prezime' in osoba) //true  
+/*sad tui backend opet nesto*/
 
 
 
