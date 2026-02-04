@@ -88,15 +88,21 @@ document.getElementById('izvedi').addEventListener('click', () => {
      
     const x =Number(a)
     const y =Number(b)
-    const z =Nubumer(c)
+    const z =Number(c)
     const v =Number(d)
 
-    rez = rez + x +y +z +v
-
-    if( x + y + z + v){
+    const rez  = x + y + z + v(
       rezultat.innerHTML = rez
-    }
+    )
 
+  
+   
+
+
+return
+
+
+//zadatak 4
 
   
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
