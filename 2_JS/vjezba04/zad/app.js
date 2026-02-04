@@ -95,7 +95,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
       rezultat.innerHTML = rez
     )
 
-    
+
 
   
    
@@ -105,6 +105,10 @@ return
 
 
 //zadatak 4
+
+const unosGodina = '2026'
+
+const godina =Number(unosGodina)
 
   
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
