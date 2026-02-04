@@ -9,14 +9,40 @@ document.getElementById('izvedi').addEventListener('click', () => {
   const zadatak = document.getElementById('zadatak').value;
 
   // Za svaki zadatak zahtijevamo određene ulaze
+
+
+    // zadatak 1
+
   if (zadatak === '1') {
    // console.log('1. zadatak');
     //console.log(a);
     
     
      const x =Number(a)
-     if(!x && )
 
+     if(!x && x!=0){
+      rezultat.innerHTML='Unesite broj u polje A'
+      return 
+    }
+
+    const y= Number(a)
+
+    if(!y){
+      rezultat.innerHTML='Unesite broj u polje B'
+      return
+    }
+
+
+    if(x>y){
+      rezultat.innerHTML= x
+        }else if(x>y){
+          rezultat.innerHTML= y
+        }
+        else{
+          rezultat.innerHTML= 'Brojevi su jednaki'
+        }
+
+        //kraj 1. zadatka
 
     return; // short curcuiting
   }
@@ -55,9 +81,21 @@ document.getElementById('izvedi').addEventListener('click', () => {
     rezultat.innerHTML= z
     }
 
+    return
 
 
+//zadatak 3
+     
+    const x =Number(a)
+    const y =Number(b)
+    const z =Nubumer(c)
+    const v =Number(d)
 
+    rez = rez + x +y +z +v
+
+    if( x + y + z + v){
+      rezultat.innerHTML = rez
+    }
 
 
   
