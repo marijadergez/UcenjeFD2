@@ -95,6 +95,8 @@ document.getElementById('izvedi').addEventListener('click', () => {
       rezultat.innerHTML = rez
     )
 
+    
+
   
    
 
