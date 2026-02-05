@@ -49,7 +49,8 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
 
 
-  // Ovdje će doći drugi zadatak
+  // zadatak 2
+
 
   if (zadatak ==='2')
   {
@@ -84,31 +85,68 @@ document.getElementById('izvedi').addEventListener('click', () => {
     return
 
 
+
 //zadatak 3
-     
-    const x =Number(a)
-    const y =Number(b)
-    const z =Number(c)
-    const v =Number(d)
+
+     if (zadatak ==='3')
+     {
+      
+
+    const x =Number(abcd)
+   
 
     const rez  = x + y + z + v(
       rezultat.innerHTML = rez
     )
 
+    let zbroj=x + y + z + v
 
-
-  
-   
-
-
+  }
+  if(!x && z && v && x!=0){
+      rezultat.innerHTML='Unesite broj u polj: A,B,C i D'
+      return 
+    }
+ 
 return
+
+
 
 
 //zadatak 4
 
+
+if (zadatak ==='4')
+{
+
+
 const unosGodina = '2026'
 
 const godina =Number(unosGodina)
+
+
+let age = 21
+
+if(age>=21){
+  rezultat.innerHTML('Punoljetan')
+  
+}else{
+  rezultat.innerHTML('Maloljetan')
+}
+}
+
+
+
+//zadatak 5
+
+if (zadatak ==='5'){
+
+      const x =Number(a)
+
+
+
+return
+
+}
 
   
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
