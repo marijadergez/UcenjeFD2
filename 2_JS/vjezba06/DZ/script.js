@@ -21,9 +21,10 @@ btn.addEventListener("click", function () {
 
 const niz = [A, 20, 30, B];
 const prvi = niz[0];
-const zadnji = niz.at(-1); 
-return
+const zadnji = niz.at(-1);
 
+console.log(`Prvi: ${prvi}, Zadnji: ${zadnji}`);
+rezultat.textContent = `Prvi: ${prvi}, Zadnji: ${zadnji}`;
 
 /*
 =================================================
