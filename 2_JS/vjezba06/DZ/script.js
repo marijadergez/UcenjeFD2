@@ -36,7 +36,7 @@ console.table(backend);
 
 /*  =================================================
    ZADATAK 1 — Prvi i zadnji element
-   - niz se gradi od  i B (plus dv fiksna elementa radi smisla)
+   - niz se gradi od A i B (plus dv fiksna elementa radi smisla)
    Ulaz primjer: [A, 20, 30, B]
    Izlaz: Prvi: A, Zadnji: B   */
 
