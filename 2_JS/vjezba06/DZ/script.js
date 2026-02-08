@@ -8,28 +8,6 @@ btn.addEventListener("click", function () {
   console.log("B:", vrijednostB);
 });
 
-const backend = [
-    {
-        id: 1,
-        ime: 'Marina',
-        prezime: 'Generacija',
-        znaProgramirati: true
-    },
-    {
-        id: 2,
-        ime: 'Karlo',
-        prezime: 'Perić',
-        znaProgramirati: false
-    },
-    {
-        id: 3,
-        ime: 'Maja',
-        prezime: 'Katić',
-        znaProgramirati: false
-    }
-];
-console.log(typeof backend, backend);
-console.table(backend);
 
 
 
@@ -41,9 +19,10 @@ console.table(backend);
    Izlaz: Prvi: A, Zadnji: B   */
 
 
-
-
-
+const niz = [A, 20, 30, B];
+const prvi = niz[0];
+const zadnji = niz.at(-1); 
+return
 
 
 /*
