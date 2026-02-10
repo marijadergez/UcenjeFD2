@@ -1,11 +1,11 @@
 const btn = document.getElementById("btnUnesi");
 
 btn.addEventListener("click", function () {
-  const vrijednostA = document.getElementById("inputA").value;
-  const vrijednostB = document.getElementById("inputB").value;
+  const A = document.getElementById("inputA").value;
+  const B = document.getElementById("inputB").value;
 
-  console.log("A:", vrijednostA);
-  console.log("B:", vrijednostB);
+  console.log("A:", A);
+  console.log("B:", B);
 });
 
 

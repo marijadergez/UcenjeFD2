@@ -57,7 +57,109 @@ document.getElementById('izvedi').addEventListener('click', () => {
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
 
+
+  
+
+   case '6':
+
+ const doBroja = Number(a)
+ if(!doBroja){
+  rezultat.innerHTML='Nisi unio broj'
+ }
+
+  if(doBroja<=1){
+  rezultat.innerHTML='Obavezno broj veći od broja 1'
+  return
+ }
+ if(doBroja>10000){
+  rezultat.innerHTML='Obavezno manji broj od 10000'
+ }
+
+
+ for(let i=1;i<doBroja;i++){
+  //console.log(i + ' ,')
+  if(i===doBroja){
+    s += i
+  }else{
+
+   s += i + ' ,'
+  }
+  //console.log(s)
+
+
+ } 
+ rezultat.innerHTML= s
+  break
+
+
+
+
+  switch (zadatak) {
+    case '1':
+      // rješavanje 1. zadatak
+
+      // kraj rješavanje 1. zadatak
+    break;
+    case '2':
+      // rješavanje 2. zadatak
+
+      // kraj rješavanje 2. zadatak
+    break;
+    case '3':
+      // rješavanje 3. zadatak
+
+      // kraj rješavanje 3. zadatak
+    break;
+
+
+    /* Za uneseno ime namirnice ispisi 
+    dali je voće ili meso ili nemozes odrediti */
+
+    case '4':
+
+    if (!a){
+      rezultat.innerHTML= 'Unesite namirnicu'
+      return
+    }
+
+
+    const aCisto = a.toLowerCase()
+
+
+    if(aCisto === 'jabuka' || aCisto === 'kruška' || aCisto=== 'banana'){
+        rezultat.innerHTML= 'voće'
+    }
+      
+    else if(aCisto === 'janjetina' || aCisto=== 'teletina' || aCisto=== 'prasetina'){
+      rezultat.innerHTML= 'meso'
+      
+    }else {
+      rezultat.innerHTML='Ne možemo odrediti'
+    }
+
+
+
+
+
+    break;
+
+    default:
+      rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
+  }
+
 });
+
+
+
+ 
+
+
+
+
+
+
+
+
 
 
 // Zadaci
