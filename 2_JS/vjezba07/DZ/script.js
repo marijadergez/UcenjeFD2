@@ -290,56 +290,45 @@ btn.addEventListener("click", function () {
 
 
 
-
+      //VELIKO MALO SLOVO PROVJERA
     case '11': {
     
         // DOHVAĆANJE ELEMENATA
         const inputA = document.getElementById("inputA");
         const check = document.getElementById("checkIndeterminate");
-        const rezultatPolje = document.getElementById("rezultat");
+        const rezultat = document.getElementById("rezultat");
 
         // EVENT LISTENER ZA CHECKBOX
         check.addEventListener("change", function() {
-          if (check.checked) {
+            if (check.checked) {
         const vrijednost = inputA.value;
 
         if (vrijednost === "") {
-            rezultatPolje.innerHTML = "Molim unesite tekst u polje A!";
+            rezultat.innerHTML = "Molim unesite tekst u polje A!";
             console.log("Polje A je prazno");
             return;
         }
 
-        // Provjera da li ima barem jedno veliko i jedno malo slovo
+        // Provjera da li ima barem jedno veliko slovo
         const imaVeliko = /[A-Z]/.test(vrijednost);
-        const imaMalo = /[a-z]/.test(vrijednost);
 
-        if (imaVeliko && imaMalo) {
-            rezultatPolje.innerHTML = `
+        if (imaVeliko) {
+            rezultat.innerHTML = `
                 <strong>Checkbox zadatak:</strong><br>
-                Uneseni tekst sadrži i velika i mala slova: ${vrijednost}
+                Tekst sadrži veliko slovo: ${vrijednost}
             `;
-            console.log("Tekst sadrži i velika i mala slova:", vrijednost);
+            console.log("Tekst sadrži veliko slovo:", vrijednost);
         } else {
             rezultatPolje.innerHTML = `
                 <strong>Checkbox zadatak:</strong><br>
-                Uneseni tekst NE sadrži oba velika i mala slova: ${vrijednost}
+                Tekst NE sadrži veliko slovo: ${vrijednost}
             `;
-            console.log("Tekst NE sadrži oba velika i mala slova:", vrijednost);
+            console.log("Tekst NE sadrži veliko slovo:", vrijednost);
         }
-        } else {
-        rezultatPolje.innerHTML = ""; // prazni polje kad se odznači
-        }
-
-
-
-
-
-
-
-        
+    } else {
+        rezultat.innerHTML = ""; // prazni polje kad se odznači
+    }
 });
-
-
 
 
 
@@ -357,6 +346,7 @@ btn.addEventListener("click", function () {
    
    switch (selectZadatak.value){
 
+      //Zadatak 12:   Uključena/isključena mala slova
 
 
 
