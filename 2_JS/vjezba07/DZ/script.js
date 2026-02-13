@@ -107,7 +107,7 @@ btn.addEventListener("click", function () {
 
       const prosjek = brojOcjena/ zbrojOcjena;
 
-      rezultatPolje.textContent = 
+      rezultatPolje.innerHTML = 
       "Broj ocjena je: " + inputA.value + 
       " || Prosjek je: " + prosjek.toFixed(2);
 
@@ -115,18 +115,18 @@ btn.addEventListener("click", function () {
       console.log("Broj ocjena je:", inputA.value);
   
 
-      console.log("U polje A unes brojA ocjena ")
+      console.log("Polje A unos ukupnog broja ocjena ")
 
-      console.log("U polje B unes ZbrojA ocjena iz A ")
-      
+      console.log("Polje B Zbroj svih ocjena iz A ")
 
-     
-
-
+      if (!inputA.value || !inputB.value) {  
+        rezultatPolje.innerHTML = "Molim unesite podatke u oba polja!";
+        console.log("Molim unesite podatke u oba polja!");
 
       break
     }
    }
+  }
 
 
 
@@ -351,7 +351,7 @@ btn.addEventListener("click", function () {
 
 
 
-});
+})
 
 
 
@@ -488,4 +488,4 @@ const stopRijeci = [
   'into', 'through', 'during', 'before', 'after', 'above', 'below', 'to', 
   'from', 'up', 'down', 'in', 'out', 'on', 'off', 'over', 'under', 'again', 
   'further', 'then', 'once'
-];
+]
