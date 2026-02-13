@@ -3,38 +3,66 @@ const btn = document.getElementById("btnUnesi");
 const rezultatPolje = document.querySelector(".result");
 const inputA = document.getElementById("inputA");
 const inputB = document.getElementById("inputB");
+const selectZadatak = document.querySelector(".form-select"); // select element
 
-// EVENT LIST
+// EVENT LISTENER
 btn.addEventListener("click", function () {
 
   const A = Number(inputA.value);
   const B = Number(inputB.value);
 
-    // VALIDACIJA 
+  // VALIDACIJA
   if (isNaN(A) || isNaN(B)) {
-    rezultatPolje.textContent = "Molim unesite brojeve!";
-    return
+    rezultatPolje.innerHTML = "Molim unesite brojeve!";
+    console.log("Neispravan unos");
+    return;
   }
- 
+
+  // SWITCH ZA ZADATKE
+  switch (selectZadatak.value) {
+    case '1': { // ZADATAK 1: Površina pravokutnika
+      const povrsina = A * B;
+      console.log("Površina pravokutnika je: " + povrsina);
+      rezultatPolje.innerHTML = "Površina pravokutnika je: " + povrsina;
+      break;
+    }
+
+    // kasnije možeš dodati case '2', '3', ... za ostale zadatke
+    default: {
+      rezultatPolje.innerHTML = "Zadatak još nije implementiran";
+      console.log("Nije odabran implementiran zadatak");
+      break
+    }
+  }
+
+   switch (selectZadatak.value) {
+      case '2': { // ZADATAK 2: Provjera je li broj pozitivan, negativan ili nula
+        let poruka = "";
+        if (A > 0) {
+          poruka = "Broj je pozitivan";
+        } else if (A < 0) {
+          poruka = "Broj je negativan";
+        } else {
+          poruka = "Not a number ili Nan";
+        }
+        rezultatPolje.innerHTML = poruka;
+        break;
+      }
+   }
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
-
-
-switch (event.target.value){ 
-  case '1':
-    // ZADATAK 1
-    const povrsina = A * B;
-    console.log("Površina pravokutnika je: " + povrsina);
-  rezultatPolje.innerHTML = "Površina pravokutnika je: " + povrsina;
-  break
-}
-
-
-
-
-
-
-
 
 
 
