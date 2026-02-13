@@ -27,11 +27,14 @@ btn.addEventListener("click", function () {
 
 
 
+
   switch (selectZadatak.value) {
 
     case '1': { 
-      // ZADATAK 1: Površina pravokutnika
+
+      // Zadatak 1: Površina pravokutnika u polju A i B
       const povrsina = A * B;
+
       console.log("Površina pravokutnika je: " + povrsina);
       rezultat.innerHTML = "Površina pravokutnika je: " + povrsina;
       break;
@@ -40,10 +43,16 @@ btn.addEventListener("click", function () {
 
   }
 
+
+
+
    switch (selectZadatak.value) {
 
       case '2': {
-          // ZADATAK 2: Provjera je li broj pozitivan, negativan ili nula
+
+          // Zadatak 2: Provjera je li broj pozitivan, negativan ili nula u polju A
+          // CIJELI BROJEVI
+
         let poruka = "";
         if (A > 0) {
           poruka = "Broj je pozitivan";
@@ -52,11 +61,260 @@ btn.addEventListener("click", function () {
         } else {
           poruka = "Broj je nula";
         }
+
         rezultat.innerHTML = poruka;
         console.log("Broj je: " + poruka);
         break;
       }
    }
+
+
+
+
+   switch (selectZadatak.value){
+
+      case '3': {
+          /* Zadatak 3:  program koji deklarira niz, traži od korisnika da unese 
+          vrijednosti u niz, a zatim izračunava i ispisuje zbroj svih 
+          elemenata niza koji su brojčanog tipa*/
+
+
+
+        break
+      }
+
+
+   }
+
+
+
+
+
+   switch (selectZadatak.value){
+
+
+
+
+    case '4': {
+
+        
+
+
+
+      break
+    }
+   }
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '5': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '6': {
+
+
+
+
+
+      break
+    }
+   }
+
+   switch (selectZadatak.value){
+
+
+
+
+    case '7': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '8': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '9': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '10': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '11': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '12': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '13': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+
+   
+   switch (selectZadatak.value){
+
+
+
+
+    case '14': {
+
+
+
+
+
+      break
+    }
+   }
+
+
+
+
+
+
+
+
 
 
 
@@ -149,7 +407,7 @@ rezultat.textContent = `Prvi: ${prvi}, Zadnji: ${zadnji}`;
 =================================================
    
    */
-/*
+
 const poveznica = document.getElementById('poveznica');
 poveznica.href='https://enciklopedija.hr/clanak/primbrojevi';
 document.getElementById('zadatak').addEventListener('change', (event) => {
@@ -178,7 +436,7 @@ document.getElementById('zadatak').addEventListener('change', (event) => {
     default:
       poveznica.href='#';
   }
-});*/
+});
    
    
 
