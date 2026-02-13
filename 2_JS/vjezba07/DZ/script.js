@@ -24,9 +24,13 @@ btn.addEventListener("click", function () {
       break
     }  */
 
-  // SWITCH ZA ZADATKE
+
+
+
   switch (selectZadatak.value) {
-    case '1': { // ZADATAK 1: Površina pravokutnika
+
+    case '1': { 
+      // ZADATAK 1: Površina pravokutnika
       const povrsina = A * B;
       console.log("Površina pravokutnika je: " + povrsina);
       rezultat.innerHTML = "Površina pravokutnika je: " + povrsina;
@@ -37,16 +41,19 @@ btn.addEventListener("click", function () {
   }
 
    switch (selectZadatak.value) {
-      case '2': { // ZADATAK 2: Provjera je li broj pozitivan, negativan ili nula
+
+      case '2': {
+          // ZADATAK 2: Provjera je li broj pozitivan, negativan ili nula
         let poruka = "";
         if (A > 0) {
           poruka = "Broj je pozitivan";
         } else if (A < 0) {
           poruka = "Broj je negativan";
         } else {
-          poruka = "Nan ili je unos u minusu";
+          poruka = "Broj je nula";
         }
         rezultat.innerHTML = poruka;
+        console.log("Broj je: " + poruka);
         break;
       }
    }
