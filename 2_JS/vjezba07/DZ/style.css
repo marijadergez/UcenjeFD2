@@ -9,19 +9,19 @@ background: linear-gradient(to right, #3d3f3f 0%, #abb8c0 50%, #081E2D 100%);
   justify-content: center;
   align-items: center;
   
-    gap: 25%;
+
 }
 
 
 .form-wrapper {
   background-color: rgb(212, 210, 210);
- 
+  padding-top: 20px;
    border-radius: 8px;
   display: flex;
   gap: 20px;
   color: #555;
   background-color: rgb(212, 210, 210);
-    
+ margin-top: 0%;   
  
 }
 .form-wrapper > div {
@@ -42,17 +42,6 @@ background: linear-gradient(to right, #3d3f3f 0%, #abb8c0 50%, #081E2D 100%);
   color: #555;
    background-color: rgb(238, 235, 235);
 }
-
-button{
-  border: rgb(141, 128, 111) solid 1px;
-  width: 150px;
-  background-color: #70df9b;
-  margin-top: 60px;
-  margin-left: 40%;
-  box-shadow: 0 8px 20px rgba(7, 7, 7, 0.25);
-  border-radius: 8px;
-  color: #555;
-} 
 
 select{
   margin-top: 20px;
@@ -75,7 +64,7 @@ select{
   width: 750px;
   display: grid;
   gap: 20px;
-  margin-top: 20%;
+  margin-top: auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   color: #555;
   
@@ -107,9 +96,34 @@ small {
 
  .form-label{
     margin-left: 2%;
-    
     font-size: large;
  }
+
+ header{
+  place-items: center;
+  padding-top: 5%;
+  margin-left: 0.1%;
+  color: #555;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+ }
+ .myButton {
+  background-color: burlywood ;
+  place-self: center;
+  font-family: 'Courier New', Courier, monospace;
+    color: #555;
+ font-size: 16px;
+  line-height: 26px; padding: 6px; 
+  border-radius: 10px;  font-weight: normal;
+   text-decoration: none; font-style: monospace;
+    font-variant: normal; text-transform: none;     
+       box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+      border: 2px solid rgb(28, 110, 164); 
+     display: inline-block;}
+.myButton:hover {
+background: #1C6EA4; }
+.myButton:active {
+background: #144E75; }
 
 
 

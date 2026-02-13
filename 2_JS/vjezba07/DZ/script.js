@@ -10,7 +10,8 @@ btn.addEventListener("click", function () {
 
 
 
-
+/*zadaci koji su zakomentirani su iz predhodne zadace broj vjezba 07 i nisu jos rijeseni,
+ a ostali su rijeseni i testirani, ali su zakomentirani da se ne bi miješali sa zadacima koji su trenutno aktivni.*/
 
 /*  =================================================
    ZADATAK 1 — Prvi i zadnji element
