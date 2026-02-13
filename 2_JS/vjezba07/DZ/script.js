@@ -1,16 +1,46 @@
+// DOHVAĆANJE ELEMENATA
 const btn = document.getElementById("btnUnesi");
+const rezultatPolje = document.querySelector(".result");
+const inputA = document.getElementById("inputA");
+const inputB = document.getElementById("inputB");
 
+// EVENT LIST
 btn.addEventListener("click", function () {
-  const A = document.getElementById("inputA").value;
-  const B = document.getElementById("inputB").value;
 
-  console.log("A:", A);
-  console.log("B:", B);
+  const A = Number(inputA.value);
+  const B = Number(inputB.value);
 
-  const rezultatPolje = document.getElementById("rezultat");
+    // VALIDACIJA 
+  if (isNaN(A) || isNaN(B)) {
+    rezultatPolje.textContent = "Molim unesite brojeve!";
+    return
+  }
+ 
 
-  rezultatPolje.innerText = "Unijeli ste A: " + A + " i B: " + B;
 });
+
+
+switch (event.target.value){ 
+  case '1':
+    // ZADATAK 1
+    const povrsina = A * B;
+    console.log("Površina pravokutnika je: " + povrsina);
+  rezultatPolje.innerHTML = "Površina pravokutnika je: " + povrsina;
+  break
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*zadaci koji su zakomentirani su iz predhodne zadace broj vjezba 07 i nisu jos rijeseni,
  a ostali su rijeseni i testirani, ali su zakomentirani da se ne bi miješali sa zadacima koji su trenutno aktivni.*/
