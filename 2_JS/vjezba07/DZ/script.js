@@ -102,21 +102,25 @@ btn.addEventListener("click", function () {
 
 
         
-      let ocjena = Number(inputA.value);
-      let zbrojOcjena = Number(inputB.value);
+      let brojOcjena = Number(inputA.value);
+      let zbrojOcjena  = Number(inputB.value);
 
-      rezultatPolje.textContent = "U polje A unesi broj ocjena (1-9)"
-      console.log("U polje A unesi broj ocjena (1-9")
+      const prosjek = brojOcjena/ zbrojOcjena;
 
-      // ternarni operator ? :
-// ukoliko je rezultat uvjeta uvijek ista akcija onda koristimo ? :
-if(ocjena>0 && ocjena<=5){
-    console.log('Ocjena je valjana');
-}else{
-    console.log(' broj dobijenih ocjena');
-}
-// inline if
-console.log(ocjena>0 && ocjena<=5 ? 'Zbroj ocjena je valjana' : 'Unijeli ste više  od 9 ocjena ,ispravite unos');
+      rezultatPolje.textContent = 
+      "Broj ocjena je: " + inputA.value + 
+      " || Prosjek je: " + prosjek.toFixed(2);
+
+
+      console.log("Broj ocjena je:", inputA.value);
+  
+
+      console.log("U polje A unes brojA ocjena ")
+
+      console.log("U polje B unes ZbrojA ocjena iz A ")
+      
+
+     
 
 
 
