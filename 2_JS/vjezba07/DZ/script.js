@@ -13,13 +13,13 @@ btn.addEventListener("click", function () {
 
   // VALIDACIJA
   if (isNaN(A) || isNaN(B)) {
-    rezultat.innerHTML = "Molim unesite brojeve!";
+    rezultat.innerHTML = "Molim -ponovite unos!";
     console.log("Neispravan unos");
     return;
   }
   
     /*default: {
-      rezultatPolje.innerHTML = "Zadatak još nije implementiran";
+      rezultat.innerHTML = "Zadatak još nije implementiran";
       console.log("Nije odabran implementiran zadatak");
       break
     }  */
@@ -107,7 +107,7 @@ btn.addEventListener("click", function () {
 
       const prosjek = brojOcjena/ zbrojOcjena;
 
-      rezultatPolje.innerHTML = 
+      rezultat.innerHTML = 
       "Broj ocjena je: " + inputA.value + 
       " || Prosjek je: " + prosjek.toFixed(2);
 
@@ -120,8 +120,8 @@ btn.addEventListener("click", function () {
       console.log("Polje B Zbroj svih ocjena iz A ")
 
       if (!inputA.value || !inputB.value) {  
-        rezultatPolje.innerHTML = "Molim unesite podatke u oba polja!";
-        console.log("Molim unesite podatke u oba polja!");
+        rezultat.innerHTML = "Molim -unesite podatke u oba polja!";
+        console.log("Obavezan unos u oba polja!");
 
       break
     }
@@ -133,12 +133,12 @@ btn.addEventListener("click", function () {
    
    switch (selectZadatak.value){
 
-
+    //
 
 
     case '5': {
 
-
+     
 
 
 
@@ -153,18 +153,33 @@ btn.addEventListener("click", function () {
    
    switch (selectZadatak.value){
 
-
+    //Zadatak 6:   string  a rezultat je da  ispisuje taj string naopako (npr. "zdravo" postaje "ovardz")
 
 
     case '6': {
 
+ 
+
+      const unos = inputA.value; 
+      
+
+      let obrnuto = "";
 
 
+      for (let i = unos.length - 1; i >= 0; i--) {
+        obrnuto += unos[i];
+      }
 
+      rezultatPolje.innerHTML = obrnuto;
+      console.log("Ispis naopako:", obrnuto);
+      break;
+      }
 
-      break
-    }
    }
+
+
+
+
 
    switch (selectZadatak.value){
 
@@ -173,8 +188,9 @@ btn.addEventListener("click", function () {
 
     case '7': {
 
+        //Zadatak 7
 
-
+  
 
 
       break
@@ -215,13 +231,33 @@ btn.addEventListener("click", function () {
 
     case '9': {
 
+      /*Zdatak 9: program koji deklarira niz, traži od korisnika da unese
+       vrijednosti u A polje -niz, a zatim sortira niz uzlazno i ispisuje sortirani niz.*/
+ 
+           const niz = [1,2,3,4,5,6,7];
+          const ime = 'Unos';
 
+          let output = "Niz: <br>";
+          for (let i = 0; i < niz.length; i++) {
+            console.log(niz[i]);
+            output += niz[i] + " ";
+          }
 
+          output += "<br>======================<br>";
 
+          for (let i = 0; i < ime.length; i++) {
+            console.log(ime[i]);
+            output += ime[i] + "<br>";
+          }
 
-      break
+          rezultatPolje.innerHTML = output;  // <- VAŽNO: mora biti rezultatPolje, ne samo rezultat
+    c
+
+        break;
     }
-   }
+  }
+   
+
 
 
 
@@ -351,7 +387,7 @@ btn.addEventListener("click", function () {
 
 
 
-})
+});
 
 
 
