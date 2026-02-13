@@ -170,7 +170,7 @@ btn.addEventListener("click", function () {
         obrnuto += unos[i];
       }
 
-      rezultatPolje.innerHTML = obrnuto;
+      rezultat.innerHTML = obrnuto;
       console.log("Ispis naopako:", obrnuto);
       break;
       }
@@ -250,7 +250,7 @@ btn.addEventListener("click", function () {
             output += ime[i] + "<br>";
           }
 
-          rezultatPolje.innerHTML = output;  // <- VAŽNO: mora biti rezultatPolje, ne samo rezultat
+          rezultat.innerHTML = output;  // <- VAŽNO: mora biti rezultatPolje, ne samo rezultat
     c
 
         break;
@@ -267,18 +267,15 @@ btn.addEventListener("click", function () {
    
    switch (selectZadatak.value){
 
-
-
-
-    case '10': {
+      //Kalkulator
 
 
 
 
 
-      break
+     
     }
-   }
+   
 
 
 
@@ -375,6 +372,7 @@ btn.addEventListener("click", function () {
 
     case '13': {
 
+        //Zadatak 13:  Uključeni/isključeni brojevi
 
 
 
