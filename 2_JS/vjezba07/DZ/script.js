@@ -284,7 +284,7 @@ btn.addEventListener("click", function () {
 
 
 
-
+   //GENERATORI LOZINKE ZADACI 
    
    switch (selectZadatak.value){
 
@@ -292,6 +292,54 @@ btn.addEventListener("click", function () {
 
 
     case '11': {
+    
+        // DOHVAĆANJE ELEMENATA
+        const inputA = document.getElementById("inputA");
+        const check = document.getElementById("checkIndeterminate");
+        const rezultatPolje = document.getElementById("rezultat");
+
+        // EVENT LISTENER ZA CHECKBOX
+        check.addEventListener("change", function() {
+          if (check.checked) {
+        const vrijednost = inputA.value;
+
+        if (vrijednost === "") {
+            rezultatPolje.innerHTML = "Molim unesite tekst u polje A!";
+            console.log("Polje A je prazno");
+            return;
+        }
+
+        // Provjera da li ima barem jedno veliko i jedno malo slovo
+        const imaVeliko = /[A-Z]/.test(vrijednost);
+        const imaMalo = /[a-z]/.test(vrijednost);
+
+        if (imaVeliko && imaMalo) {
+            rezultatPolje.innerHTML = `
+                <strong>Checkbox zadatak:</strong><br>
+                Uneseni tekst sadrži i velika i mala slova: ${vrijednost}
+            `;
+            console.log("Tekst sadrži i velika i mala slova:", vrijednost);
+        } else {
+            rezultatPolje.innerHTML = `
+                <strong>Checkbox zadatak:</strong><br>
+                Uneseni tekst NE sadrži oba velika i mala slova: ${vrijednost}
+            `;
+            console.log("Tekst NE sadrži oba velika i mala slova:", vrijednost);
+        }
+        } else {
+        rezultatPolje.innerHTML = ""; // prazni polje kad se odznači
+        }
+
+
+
+
+
+
+
+        
+});
+
+
 
 
 
