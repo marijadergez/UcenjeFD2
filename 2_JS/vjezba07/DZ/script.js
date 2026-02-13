@@ -46,6 +46,7 @@ btn.addEventListener("click", function () {
 
 
 
+
    switch (selectZadatak.value) {
 
       case '2': {
@@ -97,7 +98,16 @@ btn.addEventListener("click", function () {
 
     case '4': {
 
+        //Zadatak 4: broj ocjena, a zatim i same ocjene. Program treba izračunati i ispisati prosjek ocjena.
+
+
         
+      let brojOcjena = Number(inputA.value);
+      let zbrojOcjena = Number(inputB.value);
+
+      rezultatPolje.textContent = "U polje A unesi broj ocjena (1-9)"
+      console.log("U polje A unesi broj ocjena (1-9")
+
 
 
 
@@ -406,7 +416,7 @@ rezultat.textContent = `Prvi: ${prvi}, Zadnji: ${zadnji}`;
      Inače → niz = [A, B, "x"]
 =================================================
    
-   */
+   
 
 const poveznica = document.getElementById('poveznica');
 poveznica.href='https://enciklopedija.hr/clanak/primbrojevi';
@@ -438,7 +448,7 @@ document.getElementById('zadatak').addEventListener('change', (event) => {
   }
 });
    
-   
+   */
 
 const stopRijeci = [
   'a', 'ako', 'ali', 'bi', 'bih', 'bila', 'bili', 'bilo', 'bio', 'bismo', 
