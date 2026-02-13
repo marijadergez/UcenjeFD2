@@ -100,7 +100,7 @@ small {
 
 
  .form-label{
-  margin-left: 6%;
+  margin-left: 7%;
   font-size: large;
  }
 
@@ -121,13 +121,13 @@ small {
   background-color: burlywood ;
   place-self: center;
   font-family: 'Courier New', Courier, monospace;
-  color: #000000;
-  font-size: 16px;
+  color: #2b2a2a;
+  font-size: 18px;
   line-height: 26px; padding: 6px; 
-  border-radius: 10px;  font-weight: normal;
-  text-decoration: none; font-style: monospace;
-  font-variant: normal; text-transform: none;     
-  box-shadow: rgb(54, 52, 52) 5px 5px 15px 5px;
+  border-radius: 10px;  font-weight: bold;
+  text-decoration: none;
+  font-style: monospace;
+  box-shadow: rgb(41, 40, 40) 5px 5px 15px 5px;
   border: 2px solid rgb(28, 110, 164); 
   display: inline-block;}
   .myButton:hover {
@@ -135,4 +135,10 @@ small {
   .myButton:active {
   background: #144E75; }
 
+  .form-check{
+      margin-left: 6.5%;
+  }
+
+
+ 
 
