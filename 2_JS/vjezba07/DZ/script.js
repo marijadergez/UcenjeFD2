@@ -13,26 +13,27 @@ btn.addEventListener("click", function () {
 
   // VALIDACIJA
   if (isNaN(A) || isNaN(B)) {
-    rezultatPolje.innerHTML = "Molim unesite brojeve!";
+    rezultat.innerHTML = "Molim unesite brojeve!";
     console.log("Neispravan unos");
     return;
   }
+  
+    /*default: {
+      rezultatPolje.innerHTML = "Zadatak još nije implementiran";
+      console.log("Nije odabran implementiran zadatak");
+      break
+    }  */
 
   // SWITCH ZA ZADATKE
   switch (selectZadatak.value) {
     case '1': { // ZADATAK 1: Površina pravokutnika
       const povrsina = A * B;
       console.log("Površina pravokutnika je: " + povrsina);
-      rezultatPolje.innerHTML = "Površina pravokutnika je: " + povrsina;
+      rezultat.innerHTML = "Površina pravokutnika je: " + povrsina;
       break;
     }
 
-    // kasnije možeš dodati case '2', '3', ... za ostale zadatke
-    default: {
-      rezultatPolje.innerHTML = "Zadatak još nije implementiran";
-      console.log("Nije odabran implementiran zadatak");
-      break
-    }
+
   }
 
    switch (selectZadatak.value) {
@@ -43,9 +44,9 @@ btn.addEventListener("click", function () {
         } else if (A < 0) {
           poruka = "Broj je negativan";
         } else {
-          poruka = "Not a number ili Nan";
+          poruka = "Nan ili je unos u minusu";
         }
-        rezultatPolje.innerHTML = poruka;
+        rezultat.innerHTML = poruka;
         break;
       }
    }
