@@ -41,6 +41,56 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // ovdje ide case '4', '11', '12', itd.
 
+
+
+      switch (selectZadatak.value) {
+
+  // ZADATAK 11: Lozinka točno 5 znakova
+  case '11': {
+    const lozinka = inputA.value;
+
+    if (!lozinka) {
+      rezultat.innerHTML = "Unesite lozinku!";
+    } else if (lozinka.length === 5) {
+      rezultat.innerHTML = "Lozinka je uredu ✔";
+    } else {
+      rezultat.innerHTML = "Lozinka mora imati točno 5 znakova!";
+    }
+
+    check.addEventListener("change", () => {
+      inputA.type = check.checked ? "password" : "text";
+    });
+
+    break;
+  }
+
+    // ZADATAK 12: Lozinka - provjera velikih slova
+    case '12': {
+      const lozinka = inputA.value;
+
+      if (!lozinka) {
+        rezultat.innerHTML = "Unesite lozinku!";
+      } else {
+        const imaVeliko = /[A-Z]/.test(lozinka);
+        rezultat.innerHTML = imaVeliko ? "Lozinka ima veliko slovo ✔" : "Lozinka mora imati barem jedno veliko slovo!";
+      }
+
+      check.addEventListener("change", () => {
+        inputA.type = check.checked ? "password" : "text";
+      });
+
+      break;
+    }
+
+    default: {
+      rezultat.innerHTML = "Zadatak još nije implementiran";
+      break;
+    }
+  }
+
+
+
+
       default:
         rezultat.innerHTML = "Zadatak još nije implementiran";
         console.log("Nije odabran implementiran zadatak");
