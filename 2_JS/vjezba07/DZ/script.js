@@ -64,7 +64,7 @@ btn.addEventListener("click", function () {
         }
 
         rezultat.innerHTML = poruka;
-        console.log("Broj je: " + poruka);
+        console.log("" + poruka);
         break;
       }
    }
