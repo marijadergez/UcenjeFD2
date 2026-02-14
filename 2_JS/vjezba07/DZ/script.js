@@ -1,60 +1,52 @@
-const btn = document.getElementById("btnUnesi");
-btn.addEventListener("click", function () {
-  const A = Number(inputA.value);
-  const B = Number(inputB.value);
-  
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("btnUnesi");
+  const rezultat = document.querySelector(".result");
+  const inputA = document.getElementById("inputA");
+  const inputB = document.getElementById("inputB");
+  const selectZadatak = document.querySelector(".form-select");
 
-  switch (selectZadatak.value) {
-    case '1':
-      const povrsina = A * B;
-      rezultat.innerHTML = "Površina pravokutnika je: " + povrsina;
-      console.log("Površina pravokutnika:", povrsina);
-      break;
+  btn.addEventListener("click", function () {
 
-    case '2':
-      let poruka = "";
-      if (A > 0) poruka = "Broj je pozitivan";
-      else if (A < 0) poruka = "Broj je negativan";
-      else poruka = "Broj je nula";
-      rezultat.innerHTML = poruka;
-      console.log(poruka);
-      break;
+    const A = Number(inputA.value);
+    const B = Number(inputB.value);
 
-    case '4':
-      if (!inputA.value || !inputB.value) {
-        rezultat.innerHTML = "Molim unesite podatke u oba polja!";
-        console.log("Obavezan unos!");
-      } else {
-        const brojOcjena = Number(inputA.value);
-        const zbrojOcjena = Number(inputB.value);
-        const prosjek = zbrojOcjena / brojOcjena;
-        rezultat.innerHTML = "Broj ocjena: " + brojOcjena + " || Prosjek: " + prosjek.toFixed(2);
-        console.log("Prosjek:", prosjek.toFixed(2));
-      }
-      break;
+    // VALIDACIJA
+    if (selectZadatak.value !== '6' && (isNaN(A) || isNaN(B))) {
+      rezultat.innerHTML = "Molim - ponovite unos!";
+      console.log("Neispravan unos");
+      return;
+    }
 
-    case '6':
-      const unos = inputA.value;
-      const jePalindrom = unos === unos.split("").reverse().join("");
-      rezultat.innerHTML = jePalindrom ? "Palindrom" : "Nije palindrom";
-      console.log("Palindrom:", jePalindrom);
-      break;
+    switch(selectZadatak.value) {
+      case '1': // Površina pravokutnika
+        const povrsina = A * B;
+        rezultat.innerHTML = "Površina pravokutnika je: " + povrsina;
+        console.log("Površina pravokutnika je:", povrsina);
+        break;
 
-    case '11':
-      const lozinka = inputA.value;
-      if (!lozinka) {
-        rezultat.innerHTML = "Unesite lozinku 5 znakova!";
-      } else if (lozinka.length === 5) {
-        rezultat.innerHTML = "Lozinka je uredu ✔";
-      } else {
-        rezultat.innerHTML = "Lozinka mora imati točno 5 znakova!";
-      }
-      break;
+      case '2': // Pozitivan / negativan / nula
+        let poruka = A > 0 ? "Broj je pozitivan" :
+                      A < 0 ? "Broj je negativan" :
+                      "Broj je nula";
+        rezultat.innerHTML = poruka;
+        console.log(poruka);
+        break;
 
-    default:
-      rezultat.innerHTML = "Zadatak još nije implementiran";
-      console.log("Zadatak nije implementiran");
-  }
+      case '6': // Palindrom / string obrnuto
+        const unos = inputA.value;
+        const jePalindrom = unos === unos.split("").reverse().join("");
+        rezultat.innerHTML = jePalindrom ? "Palindrom" : "Nije palindrom";
+        console.log("Ispis:", jePalindrom);
+        break;
+
+      // ovdje ide case '4', '11', '12', itd.
+
+      default:
+        rezultat.innerHTML = "Zadatak još nije implementiran";
+        console.log("Nije odabran implementiran zadatak");
+    }
+
+  });
 });
 
 
