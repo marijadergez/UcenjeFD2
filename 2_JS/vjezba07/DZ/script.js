@@ -283,57 +283,39 @@ btn.addEventListener("click", function () {
 
    //GENERATORI LOZINKE ZADACI 
    
-   switch (selectZadatak.value){
+    // Zadatak 11 - da li lozinka ima 5 karaktera
+   
+    switch (selectZadatak.value) {
 
+  case '11': {
 
+    const lozinka = inputA.value;
+    const duzina = lozinka.length;
 
-      //VELIKO MALO SLOVO PROVJERA
-    case '11': {
-    
-        // DOHVAĆANJE ELEMENATA
-        const inputA = document.getElementById("inputA");
-        const check = document.getElementById("checkIndeterminate");
-        const rezultat = document.getElementById("rezultat");
-
-        // EVENT LISTENER ZA CHECKBOX
-        check.addEventListener("change", function() {
-            if (check.checked) {
-        const vrijednost = inputA.value;
-
-        if (vrijednost === "") {
-            rezultat.innerHTML = "Molim unesite tekst u polje A!";
-            console.log("Polje A je prazno");
-            return;
-        }
-
-        // Provjera da li ima barem jedno veliko slovo
-        const imaVeliko = /[A-Z]/.test(vrijednost);
-
-        if (imaVeliko) {
-            rezultat.innerHTML = `
-                <strong>Checkbox zadatak:</strong><br>
-                Tekst sadrži veliko slovo: ${vrijednost}
-            `;
-            console.log("Tekst sadrži veliko slovo:", vrijednost);
-        } else {
-            rezultatPolje.innerHTML = `
-                <strong>Checkbox zadatak:</strong><br>
-                Tekst NE sadrži veliko slovo: ${vrijednost}
-            `;
-            console.log("Tekst NE sadrži veliko slovo:", vrijednost);
-        }
-    } else {
-        rezultat.innerHTML = ""; // prazni polje kad se odznači
+    if (!lozinka) {
+      rezultat.innerHTML = "Unesite lozinku 5 znakova!";
+      console.log("Obavezan unos  5 znakova!");
+    } 
+    else if (duzina === 5) {
+      rezultat.innerHTML = "Lozinka je uredu ✔";
+      console.log("Lozinka je uredu ");
+    } 
+    else {
+      rezultat.innerHTML = "Lozinka mora imati točno 5 znakova!";
+      console.log("Nema točno 5 znakova!");
     }
-});
+
+    break;
+  }
+
+}
 
 
 
 
-
-      break
-    }
-   }
+        
+              
+            
 
 
 
@@ -341,21 +323,45 @@ btn.addEventListener("click", function () {
 
 
    
-   switch (selectZadatak.value){
+  
 
-      //Zadatak 12:   Uključena/isključena mala slova
+   
 
 
+  switch (selectZadatak.value) {
 
     case '12': {
 
+      const lozinka = inputA.value;
 
+      if (!lozinka) {
+        rezultat.innerHTML = "Unesite lozinku!";
+      } 
+      else if (lozinka.length === 5) {
+        rezultat.innerHTML = "Lozinka je uredu ✔";
+      } 
+      else {
+        rezultat.innerHTML = "Lozinka mora imati točno 5 znakova!";
+      }
 
-
-
-      break
+      break;
     }
-   }
+
+  }
+
+});
+
+
+        
+
+
+
+
+
+
+
+    
+   
 
 
 
@@ -423,7 +429,6 @@ btn.addEventListener("click", function () {
 
 
 
-});
 
 
 
