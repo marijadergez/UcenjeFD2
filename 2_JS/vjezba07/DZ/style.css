@@ -133,7 +133,8 @@ small {
   .myButton:hover {
   background: #1C6EA4; }
   .myButton:active {
-  background: #144E75; }
+    background-color: burlywood
+  }
 
   .form-check{
       margin-left: 6.5%;

@@ -27,7 +27,7 @@ btn.addEventListener("click", () => {
         A = Number(unosA);
         B = Number(unosB);
         if (isNaN(A) || (unosB && isNaN(B))) {
-            rezultat.textContent = "Molim - ponovite unos!";
+            rezultat.innerHtml = "Molim - ponovite unos!";
             console.log("Neispravan unos");
             return;
         }
@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
         // Zadatak 1: Površina pravokutnika
         case '1': {
             const povrsina = A * B;
-            rezultat.textContent = "Površina: " + povrsina;
+            rezultat.innerHtml = "Površina: " + povrsina;
             console.log("Površina:", povrsina);
             break;
         }
@@ -49,7 +49,7 @@ btn.addEventListener("click", () => {
         // Zadatak 2: Pozitivan, negativan ili nula
         case '2': {
             let poruka = A > 0 ? "Pozitivan" : (A < 0 ? "Negativan" : "Nula");
-            rezultat.textContent = poruka;
+            rezultat.innerHtml = poruka;
             console.log(poruka);
             break;
         }
@@ -57,7 +57,7 @@ btn.addEventListener("click", () => {
         // Zadatak 4: Prosjek ocjena
         case '4': {
             const prosjek = B / A;
-            rezultat.textContent = "Prosjek: " + prosjek.toFixed(2);
+            rezultat.innerHtml = "Prosjek: " + prosjek.toFixed(2);
             console.log("Prosjek:", prosjek.toFixed(2));
             break;
         }
@@ -65,61 +65,63 @@ btn.addEventListener("click", () => {
         // Zadatak 6: Ispiši string naopako
         case '6': {
             const obrnuto = unosA.split('').reverse().join('');
-            rezultat.textContent = obrnuto;
+            rezultat.innerHtml = obrnuto;
             console.log("Obrnuto:", obrnuto);
             break;
         }
 
         // Zadatak 9: Sortiranje stringa ili niza po karakterima
         case '9': {
-            const niz = unosA.split(''); // pretvori string u niz
-            const sortirano = niz.sort();
-            rezultat.textContent = sortirano.join('\n'); // svaki karakter u novom redu
-            console.table(sortirano);
-            console.log("Sortirano:", sortirano);
-            break;
-        }
+          const unosA = inputA.value;          
+          const niz = unosA.split('');        
+          const sortirano = niz.sort();        
+          rezultat.innerHTML = sortirano.join('\n'); 
+          console.table(sortirano);
+          console.log("Sortirano uzlazno:", sortirano);
+          break;
+      }
 
-           case '10': {
-      const niz = unosB.split('')
-      niz.sort()
-      niz.sort().reverse()
-      rezultat.textContent = niz.join('\n');
-      console.table(niz);   
-     
-    break;
-    }
+      case '10': {
+          const unosB = inputB.value;          
+          const niz = unosB.split('');         
+          const sortirano = niz.sort().reverse();  
+          rezultat.innerHTML = sortirano.join('\n');
+          console.table(sortirano);
+          console.log("Sortirano silazno:", sortirano);
+          break;
+      }
+
     
     
-    
+    inn
            // Zadatak 11: Ložinka 5 znakova
         case '11': {
             if (!unosA) {
-                rezultat.textContent = "Unesite lozinku!";
+                rezultat.innerHtml = "Unesite lozinku!";
             } else if (unosA.length === 5) {
-                rezultat.textContent = "Lozinka je uredu ✔";
+                rezultat.innerHtml = "Lozinka je uredu ✔";
             } else {
-                rezultat.textContent = "Lozinka mora imati točno 5 znakova!";
+                rezultat.innerHtml = "Lozinka mora imati točno 5 znakova!";
             }
-            console.log(rezultat.textContent);
+            console.log(rezultat.innerHtml);
             break;
         }
 
         // Zadatak 12: Lozinka s velikim/malim slovima
         case '12': {
             if (!unosA) {
-                rezultat.textContent = "Unesite lozinku!";
+                rezultat.innerHtml = "Unesite lozinku!";
             } else {
                 let velikaSlova = /[A-Z]/.test(unosA);
                 let malaSlova = /[a-z]/.test(unosA);
-                rezultat.textContent = `Velika slova: ${velikaSlova}, Mala slova: ${malaSlova}`;
+                rezultat.innerHtml = `Velika slova: ${velikaSlova}, Mala slova: ${malaSlova}`;
             }
-            console.log(rezultat.textContent);
+            console.log(rezultat.innerHtml);
             break;
         }
 
         default:
-            rezultat.textContent = "Zadatak nije definiran!";
+            rezultat.innerHtml = "Zadatak nije definiran!";
             console.log("Nepoznat zadatak");
     }
 });
