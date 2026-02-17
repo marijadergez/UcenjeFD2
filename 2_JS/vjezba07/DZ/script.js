@@ -1,144 +1,125 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("btnUnesi");
-  const rezultat = document.querySelector(".result");
-  const inputA = document.getElementById("inputA");
-  const inputB = document.getElementById("inputB");
-  const selectZadatak = document.querySelector(".form-select");
+// -----------------------
+// DOHVAT ELEMENTA
+// -----------------------
+const inputA = document.getElementById("inputA");
+const inputB = document.getElementById("inputB");
+const selectZadatak = document.querySelector(".form-select");
+const btn = document.getElementById("btnUnesi");
+const rezultat = document.getElementById("rezultat");
 
-  btn.addEventListener("click", function () {
+// Popis zadataka koji rade s tekstom
+const tekstualniZadaci = ['6', '9', '11', '12'];
 
-    const A = Number(inputA.value);
-    const B = Number(inputB.value);
-  
-    // VALIDACIJA
-    if (selectZadatak.value !== '6' && (isNaN(A) || isNaN(B))) {
-      rezultat.innerHTML = "Molim - ponovite unos!";
-      console.log("Neispravan unos");
-      return;
+// -----------------------
+// CLICK EVENT
+// -----------------------
+btn.addEventListener("click", () => {
+    const zadatak = selectZadatak.value;
+
+    // Dohvat vrijednosti
+    const unosA = inputA.value;
+    const unosB = inputB.value;
+
+    // VALIDACIJA: samo numerički zadaci zahtijevaju brojeve
+    let A = null;
+    let B = null;
+    if (!tekstualniZadaci.includes(zadatak)) {
+        A = Number(unosA);
+        B = Number(unosB);
+        if (isNaN(A) || (unosB && isNaN(B))) {
+            rezultat.textContent = "Molim - ponovite unos!";
+            console.log("Neispravan unos");
+            return;
+        }
     }
 
-    switch(selectZadatak.value) {
-      case '1': // Površina pravokutnika
-        const povrsina = A * B;
-        rezultat.innerHTML = "Površina pravokutnika je: " + povrsina;
-        console.log("Površina pravokutnika je:", povrsina);
-        break;
+    // -----------------------
+    // SWITCH ZA ZADATKE
+    // -----------------------
+    switch (zadatak) {
 
-      case '2': // Pozitivan / negativan / nula
-        let poruka = A > 0 ? "Broj je pozitivan" :
-                      A < 0 ? "Broj je negativan" :
-                      "Broj je nula";
-        rezultat.innerHTML = poruka;
-        console.log(poruka);
-        break;
+        // Zadatak 1: Površina pravokutnika
+        case '1': {
+            const povrsina = A * B;
+            rezultat.textContent = "Površina: " + povrsina;
+            console.log("Površina:", povrsina);
+            break;
+        }
 
-      case '6': // Palindrom / string obrnuto
-        const unos = inputA.value;
-        const jePalindrom = unos === unos.split("").reverse().join("");
-        rezultat.innerHTML = jePalindrom ? "Palindrom" : "Nije palindrom";
-        console.log("Ispis:", jePalindrom);
-        break;
+        // Zadatak 2: Pozitivan, negativan ili nula
+        case '2': {
+            let poruka = A > 0 ? "Pozitivan" : (A < 0 ? "Negativan" : "Nula");
+            rezultat.textContent = poruka;
+            console.log(poruka);
+            break;
+        }
 
- 
+        // Zadatak 4: Prosjek ocjena
+        case '4': {
+            const prosjek = B / A;
+            rezultat.textContent = "Prosjek: " + prosjek.toFixed(2);
+            console.log("Prosjek:", prosjek.toFixed(2));
+            break;
+        }
 
+        // Zadatak 6: Ispiši string naopako
+        case '6': {
+            const obrnuto = unosA.split('').reverse().join('');
+            rezultat.textContent = obrnuto;
+            console.log("Obrnuto:", obrnuto);
+            break;
+        }
 
-
-      /*Zadatak 9: napiši program koji deklarira niz, traži od korisnika da unese vrijednosti u niz,
-       a zatim sortira niz uzlazno i ispisuje sortirani niz. */
-
-       
-       switch (selectZadatak.value) {
-       
+        // Zadatak 9: Sortiranje stringa ili niza po karakterima
         case '9': {
-          let niz = [inputA];
-          console.log(typeof niz, niz); // kaže da je object
-          console.table(niz);
+            const niz = unosA.split(''); // pretvori string u niz
+            const sortirano = niz.sort();
+            rezultat.textContent = sortirano.join('\n'); // svaki karakter u novom redu
+            console.table(sortirano);
+            console.log("Sortirano:", sortirano);
+            break;
+        }
 
-
-      
-      break
-      
-      }
-
-
-
-
-      switch (selectZadatak.value) {
-
-  // ZADATAK 11: Lozinka točno 5 znakova
-  case '11': {
-    const lozinka = inputA.value;
-
-    if (!lozinka) {
-      rezultat.innerHTML = "Unesite lozinku!";
-    } else if (lozinka.length === 5) {
-      rezultat.innerHTML = "Lozinka je uredu ✔";
-    } else {
-      rezultat.innerHTML = "Lozinka mora imati točno 5 znakova!";
-    }
-
-    check.addEventListener("change", () => {
-      inputA.type = check.checked ? "password" : "text";
-    });
-
+           case '10': {
+      const niz = unosB.split('')
+      niz.sort()
+      niz.sort().reverse()
+      rezultat.textContent = niz.join('\n');
+      console.table(niz);   
+     
     break;
-  }
-
-    // ZADATAK 12: Lozinka - provjera velikih slova
-    case '12': {
-      const lozinka = inputA.value;
-
-      if (!lozinka) {
-        rezultat.innerHTML = "Unesite lozinku!";
-      } else {
-        const imaVeliko = /[A-Z]/.test(lozinka);
-        rezultat.innerHTML = imaVeliko ? "Lozinka ima veliko slovo ✔" : "Lozinka mora imati barem jedno veliko slovo!";
-      }
-
-      check.addEventListener("change", () => {
-        inputA.type = check.checked ? "password" : "text";
-      });
-
-      break;
     }
+    
+    
+    
+           // Zadatak 11: Ložinka 5 znakova
+        case '11': {
+            if (!unosA) {
+                rezultat.textContent = "Unesite lozinku!";
+            } else if (unosA.length === 5) {
+                rezultat.textContent = "Lozinka je uredu ✔";
+            } else {
+                rezultat.textContent = "Lozinka mora imati točno 5 znakova!";
+            }
+            console.log(rezultat.textContent);
+            break;
+        }
 
-    default: {
-      rezultat.innerHTML = "Zadatak još nije implementiran";
-      break;
+        // Zadatak 12: Lozinka s velikim/malim slovima
+        case '12': {
+            if (!unosA) {
+                rezultat.textContent = "Unesite lozinku!";
+            } else {
+                let velikaSlova = /[A-Z]/.test(unosA);
+                let malaSlova = /[a-z]/.test(unosA);
+                rezultat.textContent = `Velika slova: ${velikaSlova}, Mala slova: ${malaSlova}`;
+            }
+            console.log(rezultat.textContent);
+            break;
+        }
+
+        default:
+            rezultat.textContent = "Zadatak nije definiran!";
+            console.log("Nepoznat zadatak");
     }
-  }
-
-
-
-
-      default:
-        rezultat.innerHTML = "Zadatak još nije implementiran";
-        console.log("Nije odabran implementiran zadatak");
-    }
-
-}});
 });
-
-
-
-
-
-
-        
-              
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-

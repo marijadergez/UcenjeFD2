@@ -53,3 +53,83 @@ switch (selectZadatak.value) {
     setText("rezultat", "Zadatak još nije implementiran");
     log("Nije implementiran zadatak");
 }
+
+
+// -----------------------
+// MINI TOOLKIT: DOHVAT ELEMENTA
+// -----------------------
+const inputA = document.getElementById("inputA");
+const inputB = document.getElementById("inputB");
+const selectZadatak = document.querySelector(".form-select");
+const btn = document.getElementById("btnUnesi");
+const rezultat = document.getElementById("rezultat");
+
+// Zadaci koji koriste string
+const tekstZadaci = ['6','9','11','12'];
+
+// -----------------------
+// CLICK EVENT
+// -----------------------
+btn.addEventListener("click", () => {
+  const zadatak = selectZadatak.value;
+  const a = inputA.value;
+  const b = inputB.value;
+
+  // Pretvaranje u broj samo ako zadatak nije tekstualni
+  const A = tekstZadaci.includes(zadatak) ? a : Number(a);
+  const B = tekstZadaci.includes(zadatak) ? b : Number(b);
+
+  if (!tekstZadaci.includes(zadatak) && (isNaN(A) || (b && isNaN(B)))) {
+    rezultat.textContent = "Molim - ponovite unos!";
+    console.log("Neispravan unos");
+    return;
+  }
+
+  // -----------------------
+  // MINI SWITCH / TOOLKIT
+  // -----------------------
+  switch(zadatak) {
+
+    case '1': rezultat.textContent = "Površina: " + (A*B); break;
+
+    case '2': rezultat.textContent = A>0 ? "Pozitivan" : (A<0 ? "Negativan" : "Nula"); break;
+
+    case '4': rezultat.textContent = "Prosjek: " + (B/A).toFixed(2); break;
+
+    case '6': 
+      rezultat.textContent = a.split('').reverse().join(''); 
+      break;
+
+    case '9': { // SORTIRANJE UZLAZNO
+      const niz = a.split('');        // string u niz po karakterima
+      niz.sort();                     // sort uzlazno
+      rezultat.textContent = niz.join('\n'); // svaki karakter u novi red
+      console.table(niz);
+      break;
+    }
+
+
+ 
+
+    case '11':
+      if(!a) rezultat.textContent = "Unesite lozinku!";
+      else if(a.length===5) rezultat.textContent="Lozinka je uredu ✔";
+      else rezultat.textContent="Lozinka mora imati točno 5 znakova!";
+      break;
+
+    case '12':
+      if(!a) rezultat.textContent = "Unesite lozinku!";
+      else {
+        const velika = /[A-Z]/.test(a);
+        const mala = /[a-z]/.test(a);
+        rezultat.textContent = `Velika slova: ${velika}, Mala slova: ${mala}`;
+      }
+      break;
+
+    default: rezultat.textContent = "Zadatak nije definiran!";
+  }
+
+  console.log(rezultat.textContent);
+});
+
+
