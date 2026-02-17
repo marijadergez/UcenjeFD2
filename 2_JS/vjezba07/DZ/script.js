@@ -71,6 +71,27 @@ btn.addEventListener("click", () => {
             break;
         }
 
+        case '8': { // Pretvorba temperature C → F
+            const unosA = inputA.value;          
+            const celsius = Number(unosA);       
+
+            // 3. provjera da je broj
+            if (isNaN(celsius)) {
+                rezultat.textContent = "Molim unesite broj u polje A!";
+                console.log("Neispravan unos");
+            } else {
+                // 4. izračun Farenheita
+                const fahrenheit = (celsius * 9/5) + 32;
+
+                
+                rezultat.textContent = `${celsius}°C = ${fahrenheit.toFixed(2)}°F`;
+                console.log(`${celsius}°C = ${fahrenheit.toFixed(2)}°F`);
+            }
+
+            break;
+        }
+
+
         // Zadatak 9: Sortiranje stringa ili niza po karakterima
         case '9': {
           const unosA = inputA.value;          
