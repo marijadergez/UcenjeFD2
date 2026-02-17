@@ -128,8 +128,41 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
       // kraj rješavanje 3. zadatak
     break;
-    case '4':
-      // rješavanje 4. zadatak
+          case '4':
+            // rješavanje 4. zadatak
+            // rješavanje 4. zadatak
+            // 4. Za unesenu riječ u polje A provjerite da li je palindrom ili ne
+            // Ružan Edo ode na žur
+            // ružanedoodenažur
+            let s = '';
+            for(let i=0; i<a.length; i++){
+              if(a[i]!=' '){
+                s+=a[i].toLowerCase()
+              }
+            }
+            console.log(s)
+            let duljina=s.length
+            let palindrom=true
+            // 2. Prolazimo petljom do polovice duljine stringa
+            for (let i = 0; i < duljina / 2; i++) {
+            // Uspoređujemo znak na poziciji i sa znakom na "suprotnoj" strani
+              if (s[i] !== s[duljina - 1 - i]) {
+                palindrom=false; // Čim nađemo par koji se ne podudara, prekidamo
+              }
+            }
+            if(palindrom){
+              rezultat.innerHTML='palindrom'
+            }
+            else{
+              rezultat.innerHTML='nije palindrom'
+            }
+            // kraj rješavanje 4. zadatak
+          break;
+
+
+
+
+
 
       // kraj rješavanje 4. zadatak
     break;
