@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const A = Number(inputA.value);
     const B = Number(inputB.value);
-
+  
     // VALIDACIJA
     if (selectZadatak.value !== '6' && (isNaN(A) || isNaN(B))) {
       rezultat.innerHTML = "Molim - ponovite unos!";
@@ -39,7 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Ispis:", jePalindrom);
         break;
 
-      // ovdje ide case '4', '11', '12', itd.
+ 
+
+
+
+      /*Zadatak 9: napiši program koji deklarira niz, traži od korisnika da unese vrijednosti u niz,
+       a zatim sortira niz uzlazno i ispisuje sortirani niz. */
+
+       
+       switch (selectZadatak.value) {
+       
+        case '9': {
+          let niz = [inputA];
+          console.log(typeof niz, niz); // kaže da je object
+          console.table(niz);
+
+
+      
+      break
+      
+      }
+
 
 
 
@@ -96,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Nije odabran implementiran zadatak");
     }
 
-  });
+}});
 });
 
 
