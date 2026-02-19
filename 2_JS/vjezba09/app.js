@@ -61,3 +61,44 @@ log((Math.random()* 1000).toFixed(0))
 log((Math.random()*(999-100)+100).toFixed(0))
 
 log(slucajniBroj(100,999))
+
+
+
+function zbrojPrimBrojeva(odBroja,doBroja){
+    let suma=0, prim=false
+    for(let i=odBroja; i<=doBroja; i++){
+        if(i<1){
+            continue
+        }
+        prim=true
+        for(let j=2;j<i;j++){
+            if(i % j ===0){
+                prim=false
+                break
+            }
+            if(prim){
+                suma += i
+            }
+        }
+    }
+    return suma
+}
+
+
+log(zbrojPrimBrojeva(-2,8))
+
+
+const pozdravArrow =() => log('Hello arrow')
+
+pozdravArrow()
+
+
+const brojevi ={
+    slucajniBroj:()=>{
+        return 7
+    },
+    ime: 'Pero',
+    nula: () =>{return 0}
+} 
+
+log(brojevi['slucajniBroj'] ())
