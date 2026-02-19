@@ -115,7 +115,7 @@ btn.addEventListener("click", () => {
 
     
     
-    inn
+    
            // Zadatak 11: Ložinka 5 znakova
         case '11': {
             if (!unosA) {
@@ -125,7 +125,7 @@ btn.addEventListener("click", () => {
             } else {
                 rezultat.textContent= "Lozinka mora imati točno 5 znakova!";
             }
-            console.log(rezultat.innerHtml);
+            console.log( rezultat.textContent);
             break;
         }
 
