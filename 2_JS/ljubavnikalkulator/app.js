@@ -1,5 +1,5 @@
 const ime1='Dubravka'
-const ime2='Dino'
+const ime2='Domagoj'
 
 function izracunajLjubav(ime1, ime2) {
     const ljubav = Math.floor(Math.random() * 100) + 1;
