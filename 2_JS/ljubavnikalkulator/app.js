@@ -5,15 +5,17 @@ function pokreniKrug(ime1, ime2) {
     const ljubav = Math.floor(Math.random() * 100) + 1;
     return ljubav;
 }
+console.log(pokreniKrug(ime1, ime2));
 
-const niz = [10, 20, 30, 40, 50];
+const nizIme1 = [2,1,1,1,3,1,1,3];
+const nizIme2 = [ 2,2,1,3,1,2,1];
 
-const prvi = niz[0];                    // prvi element
-const zadnji = niz[niz.length - 1];     // zadnji element
+const prvi = nizIme1[0];                   
+const zadnji = nizIme2[nizIme2.length - 1];     
 
 const zbroj = prvi + zadnji;
 
-console.log(zbroj); // 60
+console.log(zbroj); 
 
 
 pokreniKrug()
