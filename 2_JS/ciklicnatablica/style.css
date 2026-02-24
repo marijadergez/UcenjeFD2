@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(83, 114, 95);
+    font-family: 'Courier New', Courier, monospace;
+}
+button, input {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 8, 8);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.rezultat {
+    width: 50px;
+    height: 50px;
+    border: black solid 2px;
+    background-color: seagreen;
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+    margin-top: 50px;
+}

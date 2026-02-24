@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciklična tablica do 50</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h2>Upute:</h2>
+        <p>1. Unesite broj između 1 i 50 u oba polja.</p>
+        <p>2. Kliknite na "Generiraj tablicu" da biste vidjeli cikličnu tablicu.</p>
+        <p>3. Svaki redak će biti pomaknut za jedan broj u odnosu na prethodni.</p>
+    </div>
+</header>
+
+<section>
+    <div id="ciklicna-tablica">
+        <div>
+            <h1>Ciklična tablica do 50</h1>
+            <p>Unesite broj do 50:</p>
+            <input type="number" id="input-1" min="1" max="50">
+        </div>
+
+        <div>
+            <p>Unesite broj do 50:</p>
+            <input type="number" id="input-2" min="1" max="50">
+        </div>
+
+        <br>
+        <button id="generiraj-btn">Generiraj tablicu</button>
+    </div>
+</section>
+
+<footer>
+    <div id="rezultat"></div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
