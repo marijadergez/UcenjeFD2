@@ -51,7 +51,7 @@ class Predavac extends Osoba{
         }
     }
     toString(){
-        return`${this.vrsta} $ {super.ime}`
+        return`${this.vrsta} ${super.ime}`
     }
 
 }
