@@ -1,15 +1,15 @@
-export const PI=3.14
+export const PI=3.14 
+
 export function zbroji(a,b){
     return a+b
 }
 
-export default function pozdrav(ime) {
-    return 'Hello, ${ime}'
-
-
+export default function pozdrav(ime){ // ovo je zadana funkcija iz ove datotete i za nju kod importa ne treba koristiti {}
+    return `Hello, ${ime}`
 }
+
 function prva(){
-    return 'Ovo vidim jer je napravljen export. ${druga}'
+    return `Ovo vidim jer je napravljen export. ${druga()}`
 }
 
 function druga(){
