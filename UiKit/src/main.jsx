@@ -1,10 +1,21 @@
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { Container } from 'uikit-react'
+
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <Container>
+       <App />
+  Add any child components
+</Container>
+
+
+   
   </StrictMode>,
 )
