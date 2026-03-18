@@ -43,7 +43,8 @@ export default function SmjerPregled(){
                             displayType={'text'}
                             thousandSeparator='.'
                             decimalSeparator=','
-                            suffix='€'
+                            suffix=' €'
+                            prefix=' ='
                             decimalScale={2}
                             fixedDecimalScale                            />
                         </td>
