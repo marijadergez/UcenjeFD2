@@ -19,7 +19,7 @@ function App() {
         <Route path={RouteNames.SMJEROVI} element={<SmjerPregled />}  />
       </Routes>
     <hr />
-    &copy;Edunova, Marija, Frontend 2026.
+    &copy;Edunova    ||   Marija, Frontend development 2026.
 
    </Container>
   )
