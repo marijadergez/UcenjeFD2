@@ -30,7 +30,7 @@ export default function SmjerPregled(){
           className="btn btn-success w-100 my-3">
          <GrAdd /> Dodavanje novog smjera
           </Link>
-          <Table  striped hoover responsive>
+          <Table striped hoover responsive>
             <thead>
                 <tr>
                     <th>Naziv</th>
@@ -43,10 +43,10 @@ export default function SmjerPregled(){
             </thead>
             <tbody>
                 {smjerovi && smjerovi.map((smjer)=>(
-                    <tr>
+                   <tr key={smjer.sifra}>
                         <td>{smjer.naziv}</td>
-                        <td>{smjer.trajanje} h</td>
-                        <td>
+                        <td className='text-end'>{smjer.trajanje} h</td>
+                        <td className='desno'>
                             <NumericFormat
                             value={smjer.cijena}
                             displayType={'text'}

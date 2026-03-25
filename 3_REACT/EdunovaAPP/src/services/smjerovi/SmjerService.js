@@ -1,7 +1,7 @@
 import { smjerovi } from "./SmjerPodaci";
 
 async function get(){
-    return {data: smjerovi}
+    return {data: [...smjerovi]}
 }
 
 async function getBySifra(sifra) {
@@ -18,9 +18,22 @@ async function dodaj(smjer){
     smjerovi.push(smjer)
 }
 
+async function promjeni(sifra,smjer) {
+    
+    const index =nadiIndex(sifra)
+    smjerovi[index] = {...smjerovi[index], ...smjer}
+
+    
+}
+
+function nadiIndex(sifra){
+    return smjerovi.findIndex(s=>s.sifra === parseInt(sifra))
+}
+
 
 export default{
     get,
     dodaj,
-    getBySifra
+    getBySifra,
+    promjeni
 }
