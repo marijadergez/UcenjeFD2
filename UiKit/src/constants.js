@@ -1,28 +1,27 @@
-export default class HomePage extends React.Component<any, any> {
-    render() {
-        return (
-            <OffcanvasContainer>
-                <Section>
-                    <NavbarSticky options="animation: uk-animation-slide-top; cls-inactive: uk-navbar-transparent uk-light; top: 556;">
-                        <NavbarContainer>
-                            <Navbar>
-                                <ListItem>
-                                    <Link toggleOptions="target: #menu;" href="#">
-                                        <Icon options="menu" button />
-                                    </Link>
-                                </ListItem>
-                            </Navbar>
-                        </NavbarContainer>
-                    </NavbarSticky>
-                    <Offcanvas id="menu" options="overlay: true">
-                        <List type="divider">
-                            <ListItem>
-                                <Link href="/">Home</Link>
-                            </ListItem>
-                        </List>
-                    </Offcanvas>
-                </Section>
-            </OffcanvasContainer>
-        )
-    }
-}
+export const COMETCHAT_CONSTANTS = {
+  APP_ID: "APP_ID",       // Replace with your App ID
+  REGION: "REGION",       // Replace with your Region
+  AUTH_KEY: "AUTH_KEY",    // Replace with your Auth Key (dev only)
+};
+
+
+  import { CometChatUIKit, UIKitSettingsBuilder } from "@cometchat/chat-uikit-react";
+
+/**
+ * CometChat Constants - Replace with your actual credentials
+ */
+
+const UIKitSettings = new UIKitSettingsBuilder()
+  .setAppId(COMETCHAT_CONSTANTS.APP_ID)
+  .setRegion(COMETCHAT_CONSTANTS.REGION)
+  .setAuthKey(COMETCHAT_CONSTANTS.AUTH_KEY)
+  .subscribePresenceForAllUsers()
+  .build();
+
+CometChatUIKit.init(UIKitSettings)
+  .then(() => {
+    console.log("CometChat UI Kit initialized successfully.");
+  })
+  .catch((error) => {
+    console.error("CometChat UI Kit initialization failed:", error);
+  });
