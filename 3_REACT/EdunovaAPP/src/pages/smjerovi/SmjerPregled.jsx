@@ -24,6 +24,15 @@ export default function SmjerPregled(){
         })
     }
 
+    async function obrisi(sifra) {
+        if(!confirm('Sigurno obrisati?')){
+            return
+        }
+        await SmjerService.obrisi(sifra)
+        ucitajSmjerove()
+        
+    }
+
     return(
         
           <>
@@ -31,7 +40,7 @@ export default function SmjerPregled(){
           className="btn btn-success w-100 my-3">
          <GrAdd /> Dodavanje novog smjera
           </Link>
-          <Table striped hoover responsive>
+          <Table striped hover responsive>
             <thead>
                 <tr>
                     <th>Naziv</th>
@@ -72,6 +81,12 @@ export default function SmjerPregled(){
 
                             <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
                                 Promjeni
+                            </Button>
+
+                            &nbsp;&nbsp;
+
+                            <Button variant="danger" onClick={()=>{obrisi(smjer.sifra)}}>
+                                Obriši
                             </Button>
                         </td>
                     </tr>
